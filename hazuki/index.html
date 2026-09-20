@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>食べて、熊本を応援。｜高級肉料理専門店 夢月（宮古島・平良）</title>
+<meta name="description" content="夢月の肉は、すべて熊本から届いています。2026.8.1〜8.16、対象コースを特別価格でご用意し、1食につき¥1,000〜¥5,000を熊本の作り手さんへ「応援金」としてお送りします。" />
+<meta property="og:title" content="食べて、熊本を応援。｜夢月 葉月の宴" />
+<meta property="og:description" content="阿蘇あか牛サーロインステーキコース ¥8,000（税抜）。8/1〜8/16、1日10食限定。" />
+<meta property="og:image" content="/manus-storage/sirloin_9932_47eae233.jpg" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #0c0a08; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #c9a86a; text-decoration: none; }
+  a:hover { color: #e7d3aa; }
+  @keyframes mtRise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* Language switcher */
+  #lang-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(12,10,8,0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(201,168,106,0.2);
+    display: flex;
+    justify-content: center;
+    gap: 0;
+  }
+  #lang-bar button {
+    background: none;
+    border: none;
+    color: rgba(201,168,106,0.6);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  #lang-bar button:hover { color: #c9a86a; }
+  #lang-bar button.active { color: #c9a86a; border-bottom: 1px solid #c9a86a; }
+
+  [data-lang] { display: none; }
+  [data-lang].visible { display: inline; }
+  [data-lang-block] { display: none; }
+  [data-lang-block].visible { display: block; }
+  [data-lang-li] { display: none; }
+  [data-lang-li].visible { display: flex; }
+
+  a[href^="https://www.tablecheck"]:hover { filter: brightness(1.08); }
+  a[href^="tel:"]:hover { background: rgba(201,168,106,0.08); }
+</style>
+<link rel="canonical" href="https://mutsuki-miyakojima.com/hazuki/index.html" /></head>
+<body>
+<div style="background:#0c0a08;color:#e7e1d5;font-family:'Shippori Mincho',serif;min-height:100vh;display:flex;justify-content:center">
+<div style="width:100%;max-width:460px;background:#0c0a08;overflow:hidden">
+
+  <!-- LANGUAGE BAR -->
+  <div id="lang-bar">
+    <button onclick="setLang('ja')" class="active" id="btn-ja">日本語</button>
+    <button onclick="setLang('en')" id="btn-en">EN</button>
+    <button onclick="setLang('zh')" id="btn-zh">中文</button>
+    <button onclick="setLang('ko')" id="btn-ko">한국어</button>
+  </div>
+
+  <!-- 1. FIRST VIEW -->
+  <section style="position:relative">
+    <div style="position:relative;min-height:88vh;display:flex;flex-direction:column;align-items:center;padding:38px 30px 44px;overflow:hidden">
+      <img src="../assets/hazuki_interior_wide_27f34bb4.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.34) saturate(0.7)" />
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,10,8,0.82) 0%,rgba(12,10,8,0.5) 42%,rgba(12,10,8,0.92) 100%)"></div>
+      <div style="position:relative;display:flex;flex-direction:column;align-items:center;width:100%;flex:1">
+        <img src="../assets/hazuki_logo_v2_c3114890.png" alt="夢月" style="width:64px;height:auto;mix-blend-mode:screen;opacity:0.95" />
+        <div style="flex:1;min-height:40px"></div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:26px;width:100%;animation:mtRise 1.2s ease both">
+          <h1 style="margin:0;font-size:36px;line-height:1.66;font-weight:500;letter-spacing:0.05em;text-align:center;color:#f4eee3;text-wrap:pretty">
+            <span data-lang="ja" class="visible">食べて、<br />熊本を応援。</span>
+            <span data-lang="en">Eat.<br />Support the Producers.</span>
+            <span data-lang="zh">用餐，<br />支持生產者。</span>
+            <span data-lang="ko">먹고,<br />생산자를 응원하세요.</span>
+          </h1>
+          <span style="width:1px;height:44px;background:linear-gradient(180deg,rgba(201,168,106,0.7),rgba(201,168,106,0))"></span>
+          <p style="margin:0;font-size:15px;line-height:2.1;letter-spacing:0.06em;text-align:center;color:rgba(231,225,213,0.86)">
+            <span data-lang="ja" class="visible">夢月の肉は、すべて熊本から届いています。</span>
+            <span data-lang="en">All our meats are sourced from Kumamoto.</span>
+            <span data-lang="zh">夢月的肉，全部來自熊本。</span>
+            <span data-lang="ko">夢月의 모든 육류는 구마모토에서 옵니다.</span>
+          </p>
+          <p style="margin:0;font-family:'Montserrat',sans-serif;font-size:14px;letter-spacing:0.2em;color:#c9a86a">2026.8.1 SAT — 8.16 SUN<span style="font-family:'Shippori Mincho',serif;color:rgba(201,168,106,0.85)">
+            <span data-lang="ja" class="visible">｜お盆まで</span>
+            <span data-lang="en"> | Until Obon</span>
+            <span data-lang="zh">｜至盂蘭盆</span>
+            <span data-lang="ko"> | お盆까지</span>
+          </span></p>
+        </div>
+        <div style="flex:1;min-height:36px"></div>
+        <div style="position:relative;width:100%;display:flex;flex-direction:column;gap:16px;align-items:center">
+          <a href="https://www.tablecheck.com/ja/mutsuki-miyakojima/reserve/menu" target="_blank" rel="noopener" style="display:block;width:100%;text-align:center;padding:19px 20px;background:#a9843a;color:#100c07;font-size:16px;letter-spacing:0.14em;font-weight:600">
+            <span data-lang="ja" class="visible">空席を確認して予約する</span>
+            <span data-lang="en">Check Availability & Reserve</span>
+            <span data-lang="zh">確認空位並預約</span>
+            <span data-lang="ko">빈 자리 확인 및 예약</span>
+          </a>
+          <p style="margin:0;text-align:center;font-size:11.5px;line-height:1.9;letter-spacing:0.16em;color:rgba(231,225,213,0.62)">
+            <span data-lang="ja" class="visible">完全予約制｜宮古島・平良｜高級肉料理専門店 夢月</span>
+            <span data-lang="en">Reservation Required | Miyakojima, Hirara | MUTSUKI</span>
+            <span data-lang="zh">完全預約制｜宮古島・平良｜夢月</span>
+            <span data-lang="ko">완전 예약제｜미야코지마 히라라｜夢月</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. BACKGROUND -->
+  <section style="padding:74px 30px 78px">
+    <p style="margin:0 0 22px;font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:0.34em;color:rgba(201,168,106,0.8)">BACKGROUND</p>
+    <h2 style="margin:0 0 38px;font-size:23px;line-height:1.8;font-weight:500;letter-spacing:0.06em;color:#f2ece1;text-wrap:pretty">
+      <span data-lang="ja" class="visible">経緯：<br />「葉月の宴」のこと。</span>
+      <span data-lang="en">Background:<br />About "Hazuki no Utage".</span>
+      <span data-lang="zh">緣由：<br />關於「葉月饗宴」。</span>
+      <span data-lang="ko">경위:<br />「하즈키 연회」에 대하여.</span>
+    </h2>
+    <p data-lang-block="ja" class="visible" style="margin:0 0 28px;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">この8月、私たちは「葉月の宴」という夏の催しを準備していました。新しいコースを揃え、みなさまをお迎えするつもりでした。</p>
+    <p data-lang-block="en" style="margin:0 0 28px;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">This August, we were preparing a summer event called "Hazuki no Utage." We had arranged new courses and were looking forward to welcoming our guests.</p>
+    <p data-lang-block="zh" style="margin:0 0 28px;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">今年八月，我們正在籌備名為「葉月饗宴」的夏季活動，準備了全新的套餐，期待迎接各位到來。</p>
+    <p data-lang-block="ko" style="margin:0 0 28px;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">이번 8월, 저희는 「하즈키 연회」라는 여름 행사를 준비하고 있었습니다. 새로운 코스를 마련하고 여러분을 맞이할 준비를 하고 있었습니다.</p>
+
+    <p data-lang-block="ja" class="visible" style="margin:0 0 40px;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">しかしいま、熊本の産地の状況により、食材の仕入れの見通しが立てづらくなっています。私たちは準備してきた内容を大きく変更し、深夜のアラカルト営業とコースの一部を、いったんお休みする決断をしました。</p>
+    <p data-lang-block="en" style="margin:0 0 40px;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">However, due to the current situation at our Kumamoto suppliers, it has become difficult to secure a stable supply of ingredients. We made the difficult decision to significantly revise our plans and temporarily suspend our late-night à la carte service and some courses.</p>
+    <p data-lang-block="zh" style="margin:0 0 40px;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">然而，由於熊本產地目前的狀況，食材的採購前景變得不明朗。我們做出了艱難的決定，大幅調整原定計劃，暫停深夜單點服務及部分套餐。</p>
+    <p data-lang-block="ko" style="margin:0 0 40px;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">그러나 현재 구마모토 산지 상황으로 인해 식재료 조달 전망이 불투명해졌습니다. 저희는 준비해온 내용을 크게 변경하고, 심야 단품 영업과 일부 코스를 잠시 중단하기로 결정했습니다.</p>
+
+    <blockquote style="margin:0 0 40px;padding:32px 26px;border-top:1px solid rgba(201,168,106,0.32);border-bottom:1px solid rgba(201,168,106,0.32);background:rgba(201,168,106,0.05)">
+      <p style="margin:0;font-size:18px;line-height:2.1;letter-spacing:0.05em;color:#e9d6ae;text-wrap:pretty">
+        <span data-lang="ja" class="visible">「中途半端なものは、お出ししない。いま確かに届けられる最高の肉に、集中する。」</span>
+        <span data-lang="en">"We will not serve anything half-hearted. We focus on the finest meat we can confidently deliver right now."</span>
+        <span data-lang="zh">「不提供半途而廢的料理。專注於現在能確實送達的最高品質肉類。」</span>
+        <span data-lang="ko">「어중간한 것은 내놓지 않는다. 지금 확실히 전달할 수 있는 최고의 고기에 집중한다.」</span>
+      </p>
+    </blockquote>
+    <p data-lang-block="ja" class="visible" style="margin:0;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">そして、この期間の売上の一部を、いつも最高の肉を届けてくれる熊本の作り手さんへ「応援金」として送ることにしました。</p>
+    <p data-lang-block="en" style="margin:0;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">We have also decided to send a portion of our sales during this period as "support funds" to the Kumamoto producers who always deliver the finest meat to us.</p>
+    <p data-lang-block="zh" style="margin:0;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">此外，我們決定將這段期間部分營業額，以「應援金」的形式送給一直為我們提供最高品質肉類的熊本生產者。</p>
+    <p data-lang-block="ko" style="margin:0;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">그리고 이 기간의 매출 일부를, 항상 최고의 고기를 보내주는 구마모토 생산자에게 「응원금」으로 보내기로 했습니다.</p>
+  </section>
+
+  <!-- 3. HOW IT WORKS -->
+  <section style="padding:70px 30px 76px;background:#161108">
+    <p style="margin:0 0 22px;font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:0.34em;color:rgba(201,168,106,0.8)">HOW IT WORKS</p>
+    <h2 style="margin:0 0 42px;font-size:23px;line-height:1.8;font-weight:500;letter-spacing:0.06em;color:#f2ece1;text-wrap:pretty">
+      <span data-lang="ja" class="visible">食べることが、<br />作り手の応援になります。</span>
+      <span data-lang="en">Dining becomes<br />support for producers.</span>
+      <span data-lang="zh">用餐，<br />成為對生產者的支持。</span>
+      <span data-lang="ko">드시는 것이<br />생산자 응원이 됩니다.</span>
+    </h2>
+    <div style="display:flex;flex-direction:column;margin-bottom:38px">
+      <div style="padding:22px;border:1px solid rgba(201,168,106,0.28);text-align:center;font-size:15.5px;letter-spacing:0.09em;color:#f2ece1">
+        <span data-lang="ja" class="visible">あなたの一皿</span>
+        <span data-lang="en">Your Dish</span>
+        <span data-lang="zh">您的一道菜</span>
+        <span data-lang="ko">당신의 한 접시</span>
+      </div>
+      <div style="display:flex;justify-content:center;align-items:center;height:36px"><span style="width:1px;height:36px;background:rgba(201,168,106,0.45)"></span></div>
+      <div style="padding:24px 22px;background:rgba(201,168,106,0.1);border:1px solid rgba(201,168,106,0.5);text-align:center">
+        <p style="margin:0;font-size:13px;letter-spacing:0.12em;color:rgba(233,214,174,0.85)">
+          <span data-lang="ja" class="visible">夢月から応援金</span>
+          <span data-lang="en">Support Fund from MUTSUKI</span>
+          <span data-lang="zh">夢月的應援金</span>
+          <span data-lang="ko">夢月의 응원금</span>
+        </p>
+        <p style="margin:8px 0 0;font-family:'Montserrat',sans-serif;font-size:26px;letter-spacing:0.02em;color:#e9d6ae">¥1,000 — ¥5,000</p>
+      </div>
+      <div style="display:flex;justify-content:center;align-items:center;height:36px"><span style="width:1px;height:36px;background:rgba(201,168,106,0.45)"></span></div>
+      <div style="padding:22px;border:1px solid rgba(201,168,106,0.28);text-align:center;font-size:15.5px;letter-spacing:0.09em;color:#f2ece1">
+        <span data-lang="ja" class="visible">熊本・有働精肉店</span>
+        <span data-lang="en">Udo Butcher, Kumamoto</span>
+        <span data-lang="zh">熊本・有働精肉店</span>
+        <span data-lang="ko">구마모토・우도 정육점</span>
+      </div>
+    </div>
+    <p data-lang-block="ja" class="visible" style="margin:0 0 20px;font-size:14.5px;line-height:2.15;letter-spacing:0.03em;color:rgba(231,225,213,0.8);text-wrap:pretty">期間中は対象コースを特別価格でご用意したうえで、1食につき¥1,000〜¥5,000を、夢月から「作り手応援金」として有働精肉店さんへお送りします。お客様の追加負担はありません。</p>
+    <p data-lang-block="en" style="margin:0 0 20px;font-size:14.5px;line-height:2.15;letter-spacing:0.03em;color:rgba(231,225,213,0.8);text-wrap:pretty">During this period, we offer selected courses at special prices, and for each meal, MUTSUKI will send ¥1,000–¥5,000 as "producer support funds" to Udo Butcher. No extra charge to guests.</p>
+    <p data-lang-block="zh" style="margin:0 0 20px;font-size:14.5px;line-height:2.15;letter-spacing:0.03em;color:rgba(231,225,213,0.8);text-wrap:pretty">活動期間內，精選套餐以特別價格提供，每份餐點夢月將捐出¥1,000〜¥5,000作為「生產者應援金」送至有働精肉店。顧客無需額外負擔。</p>
+    <p data-lang-block="ko" style="margin:0 0 20px;font-size:14.5px;line-height:2.15;letter-spacing:0.03em;color:rgba(231,225,213,0.8);text-wrap:pretty">기간 중 대상 코스를 특별 가격으로 제공하며, 1식당 ¥1,000〜¥5,000을 夢月에서 「생산자 응원금」으로 우도 정육점에 보냅니다. 고객 추가 부담은 없습니다.</p>
+    <p style="margin:0;font-size:12px;line-height:1.95;letter-spacing:0.04em;color:rgba(231,225,213,0.62)">
+      <span data-lang="ja" class="visible">※送付先・金額・時期を公開し、期間終了後に総額をご報告します（9月上旬送付予定）</span>
+      <span data-lang="en">※Recipient, amount, and timing will be disclosed. Total will be reported after the period ends (scheduled for early September).</span>
+      <span data-lang="zh">※將公開收款方、金額及時間，活動結束後報告總額（預計9月上旬匯出）。</span>
+      <span data-lang="ko">※수신처·금액·시기를 공개하고, 기간 종료 후 총액을 보고합니다（9월 초 송금 예정）.</span>
+    </p>
+  </section>
+
+  <!-- 4. CENTERPIECE -->
+  <section style="padding:0 0 76px">
+    <div style="position:relative;height:300px;overflow:hidden">
+      <img src="../assets/sirloin_9932_47eae233.jpg" alt="阿蘇あか牛サーロインステーキ スレートプレート" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:brightness(0.88) saturate(0.95)" />
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,10,8,0.35),rgba(12,10,8,0.1) 45%,#0c0a08 100%)"></div>
+    </div>
+    <div style="padding:8px 30px 0">
+      <p style="margin:0 0 22px;font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:0.34em;color:rgba(201,168,106,0.8)">THIS SEASON</p>
+      <h2 style="margin:0 0 20px;font-size:23px;line-height:1.8;font-weight:500;letter-spacing:0.06em;color:#f2ece1;text-wrap:pretty">
+        <span data-lang="ja" class="visible">この期間の中心となる一皿</span>
+        <span data-lang="en">The Centerpiece of This Season</span>
+        <span data-lang="zh">本季的主角料理</span>
+        <span data-lang="ko">이 기간의 중심 요리</span>
+      </h2>
+      <h3 style="margin:0 0 24px;font-size:26px;line-height:1.72;font-weight:500;letter-spacing:0.04em;color:#f4eee3;text-wrap:pretty">
+        <span data-lang="ja" class="visible">阿蘇あか牛の<br />サーロインステーキコース</span>
+        <span data-lang="en">Aso Akagyu<br />Sirloin Steak Course</span>
+        <span data-lang="zh">阿蘇赤牛<br />沙朗牛排套餐</span>
+        <span data-lang="ko">아소 아카규<br />서로인 스테이크 코스</span>
+      </h3>
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:10px">
+        <span style="font-family:'Montserrat',sans-serif;font-size:40px;line-height:1;color:#c9a86a">¥8,000</span>
+        <span style="font-size:12px;letter-spacing:0.1em;color:rgba(231,225,213,0.65)">
+          <span data-lang="ja" class="visible">税抜</span>
+          <span data-lang="en">excl. tax</span>
+          <span data-lang="zh">未稅</span>
+          <span data-lang="ko">세전</span>
+        </span>
+      </div>
+      <p style="margin:0 0 28px;font-size:14px;letter-spacing:0.1em;color:rgba(233,214,174,0.9)">
+        <span data-lang="ja" class="visible">1日10食限定・なくなり次第終了</span>
+        <span data-lang="en">Limited to 10 servings per day · Until sold out</span>
+        <span data-lang="zh">每日限量10份・售完為止</span>
+        <span data-lang="ko">하루 10식 한정・소진 시 종료</span>
+      </p>
+      <p data-lang-block="ja" class="visible" style="margin:0 0 22px;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">いま確かな量を仕入れられるサーロインを主役に、¥20,000のコースと同じ流れを、1日10食だけご用意します。</p>
+      <p data-lang-block="en" style="margin:0 0 22px;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">Featuring sirloin we can confidently source right now, we offer the same flow as our ¥20,000 course — limited to just 10 servings per day.</p>
+      <p data-lang-block="zh" style="margin:0 0 22px;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">以現在能確實採購的沙朗為主角，提供與¥20,000套餐相同流程的料理，每日僅限10份。</p>
+      <p data-lang-block="ko" style="margin:0 0 22px;font-size:15px;line-height:2.2;letter-spacing:0.03em;color:rgba(231,225,213,0.82);text-wrap:pretty">지금 확실히 조달 가능한 서로인을 주역으로, ¥20,000 코스와 같은 흐름을 하루 10식만 제공합니다.</p>
+      <p style="margin:0;padding:14px 18px;border-left:1px solid rgba(201,168,106,0.5);font-size:13.5px;letter-spacing:0.06em;color:#e9d6ae">
+        <span data-lang="ja" class="visible">＋夢月から応援金 ¥1,000</span>
+        <span data-lang="en">+ Support Fund ¥1,000 from MUTSUKI</span>
+        <span data-lang="zh">＋夢月應援金 ¥1,000</span>
+        <span data-lang="ko">＋夢月 응원금 ¥1,000</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- 5. THREE MEATS -->
+  <section style="padding:0 0 76px">
+    <div style="padding:0 30px">
+      <p style="margin:0 0 22px;font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:0.34em;color:rgba(201,168,106,0.8)">THREE MEATS</p>
+      <h2 style="margin:0 0 34px;font-size:23px;line-height:1.8;font-weight:500;letter-spacing:0.06em;color:#f2ece1">
+        <span data-lang="ja" class="visible">夢月の、三つの銘肉。</span>
+        <span data-lang="en">Three Signature Meats of MUTSUKI.</span>
+        <span data-lang="zh">夢月的三種銘肉。</span>
+        <span data-lang="ko">夢月의 세 가지 명육.</span>
+      </h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:46px">
+      <article>
+        <div style="height:250px;overflow:hidden"><img src="../assets/basashi_1325_3cabb682.webp" alt="熊本県産 馬刺し" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:brightness(0.92)" /></div>
+        <div style="padding:22px 30px 0">
+          <h3 style="margin:0 0 12px;font-size:19px;font-weight:500;letter-spacing:0.1em;color:#f2ece1">
+            <span data-lang="ja" class="visible">熊本県産 馬刺し</span>
+            <span data-lang="en">Kumamoto Horse Sashimi</span>
+            <span data-lang="zh">熊本縣產 馬刺身</span>
+            <span data-lang="ko">구마모토산 말고기 사시미</span>
+          </h3>
+          <p style="margin:0;font-size:14.5px;line-height:2.1;letter-spacing:0.03em;color:rgba(231,225,213,0.75);text-wrap:pretty">
+            <span data-lang="ja" class="visible">馬刺し文化の本場・熊本から届く上質な赤身。ヒレ、ロース、タテガミ——部位ごとの食感の違いを。</span>
+            <span data-lang="en">Premium lean cuts from Kumamoto, the home of horse sashimi culture. Savor the difference between fillet, loin, and mane.</span>
+            <span data-lang="zh">來自馬刺身文化發源地熊本的優質紅肉。品味菲力、里脊、鬃毛各部位的不同口感。</span>
+            <span data-lang="ko">말고기 사시미 문화의 본고장 구마모토에서 온 최고급 적육. 안심, 등심, 갈기 각 부위의 식감 차이를 즐기세요.</span>
+          </p>
+        </div>
+      </article>
+      <article>
+        <div style="height:250px;overflow:hidden"><img src="../assets/akagyu_steak_1211_07113037.webp" alt="阿蘇あか牛 ステーキ" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:brightness(0.92)" /></div>
+        <div style="padding:22px 30px 0">
+          <h3 style="margin:0 0 12px;font-size:19px;font-weight:500;letter-spacing:0.1em;color:#f2ece1">
+            <span data-lang="ja" class="visible">阿蘇あか牛 ステーキ</span>
+            <span data-lang="en">Aso Akagyu Beef Steak</span>
+            <span data-lang="zh">阿蘇赤牛 牛排</span>
+            <span data-lang="ko">아소 아카규 스테이크</span>
+          </h3>
+          <p style="margin:0;font-size:14.5px;line-height:2.1;letter-spacing:0.03em;color:rgba(231,225,213,0.75);text-wrap:pretty">
+            <span data-lang="ja" class="visible">阿蘇の大草原で育つ褐毛和種。赤身の旨みが濃く、脂はあっさり上品。</span>
+            <span data-lang="en">Brown Japanese cattle raised on the vast grasslands of Aso. Rich umami in the lean meat, with clean, elegant fat.</span>
+            <span data-lang="zh">在阿蘇大草原上生長的褐毛和種。紅肉鮮味濃郁，油脂清爽高雅。</span>
+            <span data-lang="ko">아소 대초원에서 자란 갈색 화우. 적육의 감칠맛이 진하고 지방은 담백하고 우아합니다.</span>
+          </p>
+        </div>
+      </article>
+      <article>
+        <div style="height:250px;overflow:hidden"><img src="../assets/kainomi_steak_1207_a513e8fd.webp" alt="熊本県産 馬肉カイノミステーキ" style="width:100%;height:100%;object-fit:cover;object-position:center 50%;filter:brightness(0.92)" /></div>
+        <div style="padding:22px 30px 0">
+          <h3 style="margin:0 0 12px;font-size:19px;font-weight:500;letter-spacing:0.1em;color:#f2ece1">
+            <span data-lang="ja" class="visible">熊本県産 馬肉ステーキ</span>
+            <span data-lang="en">Kumamoto Horse Steak</span>
+            <span data-lang="zh">熊本縣產 馬肉牛排</span>
+            <span data-lang="ko">구마모토산 말고기 스테이크</span>
+          </h3>
+          <p style="margin:0;font-size:14.5px;line-height:2.1;letter-spacing:0.03em;color:rgba(231,225,213,0.75);text-wrap:pretty">
+            <span data-lang="ja" class="visible">馬刺し文化の本場・熊本から届くカイノミ。鉄板で焼き上げると、赤身の旨みが凝縮し、馬肉の新しい一面に出会う。</span>
+            <span data-lang="en">Kainomi (flank) from Kumamoto. When grilled on an iron plate, the umami of the lean meat intensifies, revealing a new side of horse meat.</span>
+            <span data-lang="zh">來自熊本的腹脅肉（カイノミ）。在鐵板上烤製後，紅肉的鮮味凝縮，展現馬肉全新的一面。</span>
+            <span data-lang="ko">구마모토에서 온 카이노미（옆구리살）. 철판에 구우면 적육의 감칠맛이 응축되어 말고기의 새로운 면을 만납니다.</span>
+          </p>
+        </div>
+      </article>
+      <article>
+        <div style="height:250px;overflow:hidden"><img src="../assets/hazuki_amakusa_hero_8e770069.jpg" alt="天草大王" style="width:100%;height:100%;object-fit:cover;filter:brightness(0.9)" /></div>
+        <div style="padding:22px 30px 0">
+          <h3 style="margin:0 0 12px;font-size:19px;font-weight:500;letter-spacing:0.1em;color:#f2ece1">
+            <span data-lang="ja" class="visible">天草大王</span>
+            <span data-lang="en">Amakusa Daio Chicken</span>
+            <span data-lang="zh">天草大王地雞</span>
+            <span data-lang="ko">아마쿠사 다이오 토종닭</span>
+          </h3>
+          <p style="margin:0;font-size:14.5px;line-height:2.1;letter-spacing:0.03em;color:rgba(231,225,213,0.75);text-wrap:pretty">
+            <span data-lang="ja" class="visible">日本最大級の在来地鶏。力強い歯ごたえと濃い旨み。お造り、スープ、鉄板焼きで一羽を味わい尽くす。</span>
+            <span data-lang="en">One of Japan's largest native breeds. Firm texture and deep umami. Enjoy every part — sashimi, soup, and iron-plate grilled.</span>
+            <span data-lang="zh">日本最大級的在來地雞。強勁的嚼勁與濃郁的鮮味。以刺身、湯品、鐵板燒品嚐整隻雞的精華。</span>
+            <span data-lang="ko">일본 최대급 재래 토종닭. 힘찬 식감과 진한 감칠맛. 사시미, 수프, 철판구이로 한 마리를 맛보세요.</span>
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 6. COURSE -->
+  <section style="padding:70px 30px 76px;background:#161108">
+    <p style="margin:0 0 22px;font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:0.34em;color:rgba(201,168,106,0.8)">COURSE</p>
+    <h2 style="margin:0 0 34px;font-size:23px;line-height:1.8;font-weight:500;letter-spacing:0.06em;color:#f2ece1">
+      <span data-lang="ja" class="visible">コースの流れ（全9品）</span>
+      <span data-lang="en">Course Flow (9 dishes)</span>
+      <span data-lang="zh">套餐流程（共9道）</span>
+      <span data-lang="ko">코스 흐름（전 9품）</span>
+    </h2>
+    <ol style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column">
+      <li style="display:flex;gap:18px;padding:17px 0;border-bottom:1px solid rgba(201,168,106,0.14)"><span style="font-family:'Montserrat',sans-serif;font-size:14px;color:rgba(201,168,106,0.75);min-width:20px">01</span><span style="font-size:15.5px;line-height:1.9;letter-spacing:0.05em;color:rgba(242,236,225,0.92)"><span data-lang="ja" class="visible">食前酒</span><span data-lang="en">Aperitif</span><span data-lang="zh">餐前酒</span><span data-lang="ko">식전주</span></span></li>
+      <li style="display:flex;gap:18px;padding:17px 0;border-bottom:1px solid rgba(201,168,106,0.14)"><span style="font-family:'Montserrat',sans-serif;font-size:14px;color:rgba(201,168,106,0.75);min-width:20px">02</span><span style="font-size:15.5px;line-height:1.9;letter-spacing:0.05em;color:rgba(242,236,225,0.92)"><span data-lang="ja" class="visible">前菜</span><span data-lang="en">Appetizer</span><span data-lang="zh">前菜</span><span data-lang="ko">전채</span></span></li>
+      <li style="display:flex;gap:18px;padding:17px 0;border-bottom:1px solid rgba(201,168,106,0.14)"><span style="font-family:'Montserrat',sans-serif;font-size:14px;color:rgba(201,168,106,0.75);min-width:20px">03</span><span style="font-size:15.5px;line-height:1.9;letter-spacing:0.05em;color:rgba(242,236,225,0.92)"><span data-lang="ja" class="visible">お造り</span><span data-lang="en">Sashimi</span><span data-lang="zh">生魚片</span><span data-lang="ko">사시미</span></span></li>
+      <li style="display:flex;gap:18px;padding:17px 0;border-bottom:1px solid rgba(201,168,106,0.14)"><span style="font-family:'Montserrat',sans-serif;font-size:14px;color:rgba(201,168,106,0.75);min-width:20px">04</span><span style="font-size:15.5px;line-height:1.9;letter-spacing:0.05em;color:rgba(242,236,225,0.92)"><span data-lang="ja" class="visible">天草大王地鶏のスープ</span><span data-lang="en">Amakusa Daio Chicken Soup</span><span data-lang="zh">天草大王地雞湯</span><span data-lang="ko">아마쿠사 다이오 닭 수프</span></span></li>
+      <li style="display:flex;gap:18px;padding:17px 0;border-bottom:1px solid rgba(201,168,106,0.14)"><span style="font-family:'Montserrat',sans-serif;font-size:14px;color:#c9a86a;min-width:20px">05</span><span style="font-size:15.5px;line-height:1.9;letter-spacing:0.05em;color:#e9d6ae"><span data-lang="ja" class="visible">阿蘇あか牛サーロインの鉄板焼き<br /><span style="font-size:13px;color:rgba(231,225,213,0.68)">石のプレートで、最後のひと火はお好みのまま</span></span><span data-lang="en">Aso Akagyu Sirloin Iron-plate Grilled<br /><span style="font-size:13px;color:rgba(231,225,213,0.68)">Finish to your preferred doneness on the stone plate</span></span><span data-lang="zh">阿蘇赤牛沙朗鐵板燒<br /><span style="font-size:13px;color:rgba(231,225,213,0.68)">在石板上按您喜好完成最後一道火</span></span><span data-lang="ko">아소 아카규 서로인 철판구이<br /><span style="font-size:13px;color:rgba(231,225,213,0.68)">돌 플레이트에서 원하는 굽기로 마무리</span></span></span></li>
+      <li style="display:flex;gap:18px;padding:17px 0;border-bottom:1px solid rgba(201,168,106,0.14)"><span style="font-family:'Montserrat',sans-serif;font-size:14px;color:rgba(201,168,106,0.75);min-width:20px">06</span><span style="font-size:15.5px;line-height:1.9;letter-spacing:0.05em;color:rgba(242,236,225,0.92)"><span data-lang="ja" class="visible">俵おにぎり</span><span data-lang="en">Tawara Rice Ball</span><span data-lang="zh">俵形飯糰</span><span data-lang="ko">타와라 주먹밥</span></span></li>
+      <li style="display:flex;gap:18px;padding:17px 0;border-bottom:1px solid rgba(201,168,106,0.14)"><span style="font-family:'Montserrat',sans-serif;font-size:14px;color:rgba(201,168,106,0.75);min-width:20px">07</span><span style="font-size:15.5px;line-height:1.9;letter-spacing:0.05em;color:rgba(242,236,225,0.92)"><span data-lang="ja" class="visible">シェフのシークレット一品</span><span data-lang="en">Chef's Secret Dish</span><span data-lang="zh">主廚秘密料理</span><span data-lang="ko">셰프의 시크릿 요리</span></span></li>
+      <li style="display:flex;gap:18px;padding:17px 0;border-bottom:1px solid rgba(201,168,106,0.14)"><span style="font-family:'Montserrat',sans-serif;font-size:14px;color:rgba(201,168,106,0.75);min-width:20px">08</span><span style="font-size:15.5px;line-height:1.9;letter-spacing:0.05em;color:rgba(242,236,225,0.92)"><span data-lang="ja" class="visible">季節の果実</span><span data-lang="en">Seasonal Fruit</span><span data-lang="zh">當季水果</span><span data-lang="ko">제철 과일</span></span></li>
+      <li style="display:flex;gap:18px;padding:17px 0;border-bottom:1px solid rgba(201,168,106,0.14)"><span style="font-family:'Montserrat',sans-serif;font-size:14px;color:rgba(201,168,106,0.75);min-width:20px">09</span><span style="font-size:15.5px;line-height:1.9;letter-spacing:0.05em;color:rgba(242,236,225,0.92)"><span data-lang="ja" class="visible">デザート</span><span data-lang="en">Dessert</span><span data-lang="zh">甜點</span><span data-lang="ko">디저트</span></span></li>
+    </ol>
+    <p style="margin:22px 0 0;font-size:12px;line-height:1.9;letter-spacing:0.05em;color:rgba(231,225,213,0.62)">
+      <span data-lang="ja" class="visible">※仕入れ状況により内容が変わる場合がございます</span>
+      <span data-lang="en">※Course content may change depending on ingredient availability.</span>
+      <span data-lang="zh">※套餐內容可能因食材採購狀況而有所調整。</span>
+      <span data-lang="ko">※식재료 조달 상황에 따라 내용이 변경될 수 있습니다.</span>
+    </p>
+  </section>
+
+  <!-- 7. OTHER COURSES -->
+  <section style="padding:70px 30px 76px">
+    <p style="margin:0 0 22px;font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:0.34em;color:rgba(201,168,106,0.8)">OTHER COURSES</p>
+    <h2 style="margin:0 0 34px;font-size:23px;line-height:1.8;font-weight:500;letter-spacing:0.06em;color:#f2ece1">
+      <span data-lang="ja" class="visible">その他の対象コース</span>
+      <span data-lang="en">Other Eligible Courses</span>
+      <span data-lang="zh">其他對象套餐</span>
+      <span data-lang="ko">기타 대상 코스</span>
+    </h2>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div style="padding:26px 22px;border:1px solid rgba(201,168,106,0.28)">
+        <h3 style="margin:0 0 18px;font-size:17px;font-weight:500;letter-spacing:0.08em;color:#f2ece1">
+          <span data-lang="ja" class="visible">お肉2種の食べ比べコース</span>
+          <span data-lang="en">Two-Meat Comparison Course</span>
+          <span data-lang="zh">雙肉比較套餐</span>
+          <span data-lang="ko">2종 고기 비교 코스</span>
+        </h3>
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:16px;color:rgba(231,225,213,0.5);text-decoration:line-through">
+            <span data-lang="ja" class="visible">通常¥15,000</span>
+            <span data-lang="en">Reg. ¥15,000</span>
+            <span data-lang="zh">原價¥15,000</span>
+            <span data-lang="ko">정가 ¥15,000</span>
+          </span>
+          <span style="color:rgba(201,168,106,0.75)">→</span>
+          <span style="font-family:'Montserrat',sans-serif;font-size:28px;color:#c9a86a">¥12,000</span>
+        </div>
+        <p style="margin:14px 0 0;font-size:13px;letter-spacing:0.06em;color:rgba(233,214,174,0.85)">
+          <span data-lang="ja" class="visible">＋夢月から応援金 ¥3,000</span>
+          <span data-lang="en">+ Support Fund ¥3,000 from MUTSUKI</span>
+          <span data-lang="zh">＋夢月應援金 ¥3,000</span>
+          <span data-lang="ko">＋夢月 응원금 ¥3,000</span>
+        </p>
+      </div>
+      <div style="padding:26px 22px;border:1px solid rgba(201,168,106,0.28)">
+        <h3 style="margin:0 0 18px;font-size:17px;font-weight:500;letter-spacing:0.08em;color:#f2ece1">
+          <span data-lang="ja" class="visible">馬・牛・鶏 3種すべてのコース</span>
+          <span data-lang="en">Three-Meat Course (Horse, Beef, Chicken)</span>
+          <span data-lang="zh">馬・牛・雞 三種全套餐</span>
+          <span data-lang="ko">말·소·닭 3종 풀 코스</span>
+        </h3>
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:16px;color:rgba(231,225,213,0.5);text-decoration:line-through">
+            <span data-lang="ja" class="visible">通常¥20,000</span>
+            <span data-lang="en">Reg. ¥20,000</span>
+            <span data-lang="zh">原價¥20,000</span>
+            <span data-lang="ko">정가 ¥20,000</span>
+          </span>
+          <span style="color:rgba(201,168,106,0.75)">→</span>
+          <span style="font-family:'Montserrat',sans-serif;font-size:28px;color:#c9a86a">¥15,000</span>
+        </div>
+        <p style="margin:14px 0 0;font-size:13px;letter-spacing:0.06em;color:rgba(233,214,174,0.85)">
+          <span data-lang="ja" class="visible">＋夢月から応援金 ¥5,000</span>
+          <span data-lang="en">+ Support Fund ¥5,000 from MUTSUKI</span>
+          <span data-lang="zh">＋夢月應援金 ¥5,000</span>
+          <span data-lang="ko">＋夢月 응원금 ¥5,000</span>
+        </p>
+      </div>
+    </div>
+    <div style="margin-top:26px;display:flex;flex-direction:column;gap:8px">
+      <p style="margin:0;font-size:12px;line-height:1.9;letter-spacing:0.04em;color:rgba(231,225,213,0.62)">
+        <span data-lang="ja" class="visible">※表示価格は税抜</span>
+        <span data-lang="en">※Prices shown are excl. tax.</span>
+        <span data-lang="zh">※標示價格為未稅。</span>
+        <span data-lang="ko">※표시 가격은 세전입니다.</span>
+      </p>
+      <p style="margin:0;font-size:12px;line-height:1.9;letter-spacing:0.04em;color:rgba(231,225,213,0.62)">
+        <span data-lang="ja" class="visible">※黒豚しゃぶしゃぶ・あか牛もつ鍋のコース（¥8,000）もあり</span>
+        <span data-lang="en">※Kurobuta shabu-shabu & Akagyu offal hot pot course (¥8,000) also available.</span>
+        <span data-lang="zh">※另有黑豬涮涮鍋・赤牛內臟火鍋套餐（¥8,000）。</span>
+        <span data-lang="ko">※흑돼지 샤부샤부・아카규 내장 전골 코스（¥8,000）도 있습니다.</span>
+      </p>
+      <p style="margin:0;font-size:12px;line-height:1.9;letter-spacing:0.04em;color:rgba(231,225,213,0.62)">
+        <span data-lang="ja" class="visible">※お肉1種のコース（三日月）は期間中お休み、8/17再開予定</span>
+        <span data-lang="en">※Single-meat course (Mikazuki) is suspended during this period; scheduled to resume 8/17.</span>
+        <span data-lang="zh">※單肉套餐（三日月）活動期間暫停，預計8/17恢復。</span>
+        <span data-lang="ko">※1종 고기 코스（三日月）는 기간 중 휴지, 8/17 재개 예정.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- 8. Q&A -->
+  <section style="padding:70px 30px 76px;background:#161108">
+    <p style="margin:0 0 22px;font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:0.34em;color:rgba(201,168,106,0.8)">INFORMATION</p>
+    <h2 style="margin:0 0 34px;font-size:23px;line-height:1.8;font-weight:500;letter-spacing:0.06em;color:#f2ece1">
+      <span data-lang="ja" class="visible">ご利用案内</span>
+      <span data-lang="en">Guest Information</span>
+      <span data-lang="zh">使用說明</span>
+      <span data-lang="ko">이용 안내</span>
+    </h2>
+    <div style="display:flex;flex-direction:column;border-top:1px solid rgba(201,168,106,0.18)">
+      <div style="padding:26px 2px;border-bottom:1px solid rgba(201,168,106,0.14)">
+        <p style="margin:0 0 12px;font-size:15.5px;letter-spacing:0.07em;color:#e9d6ae">
+          <span data-lang="ja" class="visible">Q. 予約は必要？</span>
+          <span data-lang="en">Q. Is a reservation required?</span>
+          <span data-lang="zh">Q. 需要預約嗎？</span>
+          <span data-lang="ko">Q. 예약이 필요한가요?</span>
+        </p>
+        <p style="margin:0;font-size:14.5px;line-height:2.1;letter-spacing:0.03em;color:rgba(231,225,213,0.78);text-wrap:pretty">
+          <span data-lang="ja" class="visible">完全予約制。1名様からご予約OK。サーロインは1日10食なのでお早めに。</span>
+          <span data-lang="en">Reservations required. Parties of 1 welcome. Sirloin is limited to 10 per day — book early.</span>
+          <span data-lang="zh">完全預約制。1人即可預約。沙朗每日限量10份，請盡早預約。</span>
+          <span data-lang="ko">완전 예약제. 1인부터 예약 가능. 서로인은 하루 10식 한정이므로 서둘러 예약하세요.</span>
+        </p>
+      </div>
+      <div style="padding:26px 2px;border-bottom:1px solid rgba(201,168,106,0.14)">
+        <p style="margin:0 0 12px;font-size:15.5px;letter-spacing:0.07em;color:#e9d6ae">
+          <span data-lang="ja" class="visible">Q. 営業時間は？</span>
+          <span data-lang="en">Q. What are the hours?</span>
+          <span data-lang="zh">Q. 營業時間？</span>
+          <span data-lang="ko">Q. 영업 시간은?</span>
+        </p>
+        <p style="margin:0;font-size:14.5px;line-height:2.1;letter-spacing:0.03em;color:rgba(231,225,213,0.78);text-wrap:pretty">
+          <span data-lang="ja" class="visible">ディナー17:00〜24:00（最終入店22:00）。深夜アラカルトは仕入れ状況により7月末でいったんお休み。</span>
+          <span data-lang="en">Dinner 17:00–24:00 (last entry 22:00). Late-night à la carte is temporarily suspended as of end of July.</span>
+          <span data-lang="zh">晚餐17:00〜24:00（最後入店22:00）。深夜單點因食材狀況暫停至7月底。</span>
+          <span data-lang="ko">디너 17:00〜24:00（마지막 입장 22:00）. 심야 단품은 식재료 상황으로 7월 말부터 잠시 휴지.</span>
+        </p>
+      </div>
+      <div style="padding:26px 2px;border-bottom:1px solid rgba(201,168,106,0.14)">
+        <p style="margin:0 0 12px;font-size:15.5px;letter-spacing:0.07em;color:#e9d6ae">
+          <span data-lang="ja" class="visible">Q. キャンセルは？</span>
+          <span data-lang="en">Q. Cancellation policy?</span>
+          <span data-lang="zh">Q. 取消政策？</span>
+          <span data-lang="ko">Q. 취소 정책은?</span>
+        </p>
+        <p style="margin:0;font-size:14.5px;line-height:2.1;letter-spacing:0.03em;color:rgba(231,225,213,0.78);text-wrap:pretty">
+          <span data-lang="ja" class="visible">前日18時まで。当日・無断はコース料金の100%。</span>
+          <span data-lang="en">By 18:00 the day before. Same-day or no-show: 100% of course price.</span>
+          <span data-lang="zh">前一日18時前取消。當日取消或未到：課程費用100%。</span>
+          <span data-lang="ko">전날 18시까지. 당일·무단 취소: 코스 요금의 100%.</span>
+        </p>
+      </div>
+      <div style="padding:26px 2px;border-bottom:1px solid rgba(201,168,106,0.14)">
+        <p style="margin:0 0 12px;font-size:15.5px;letter-spacing:0.07em;color:#e9d6ae">
+          <span data-lang="ja" class="visible">Q. 応援金は追加で払うの？</span>
+          <span data-lang="en">Q. Do I pay extra for the support fund?</span>
+          <span data-lang="zh">Q. 應援金需要額外支付嗎？</span>
+          <span data-lang="ko">Q. 응원금은 추가로 내나요?</span>
+        </p>
+        <p style="margin:0;font-size:14.5px;line-height:2.1;letter-spacing:0.03em;color:rgba(231,225,213,0.78);text-wrap:pretty">
+          <span data-lang="ja" class="visible">いいえ、追加負担はありません。表示価格で楽しむだけで、夢月が応援金をお送りします。</span>
+          <span data-lang="en">No extra charge. Simply enjoy your meal at the listed price, and MUTSUKI will send the support fund.</span>
+          <span data-lang="zh">不需要。只需以標示價格享用，夢月將代為送出應援金。</span>
+          <span data-lang="ko">아니요, 추가 부담 없습니다. 표시 가격으로 즐기시면 夢月이 응원금을 보냅니다.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. ACCESS -->
+  <section style="padding:70px 0 76px">
+    <div style="padding:0 30px">
+      <p style="margin:0 0 22px;font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:0.34em;color:rgba(201,168,106,0.8)">ACCESS</p>
+      <h2 style="margin:0 0 26px;font-size:23px;line-height:1.8;font-weight:500;letter-spacing:0.06em;color:#f2ece1">
+        <span data-lang="ja" class="visible">アクセス</span>
+        <span data-lang="en">Access</span>
+        <span data-lang="zh">交通資訊</span>
+        <span data-lang="ko">오시는 길</span>
+      </h2>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:2.1;letter-spacing:0.04em;color:rgba(231,225,213,0.82);text-wrap:pretty">〒906-0013<br />
+        <span data-lang="ja" class="visible">沖縄県宮古島市平良下里65-2 FC-1ビル 1F</span>
+        <span data-lang="en">FC-1 Bldg. 1F, 65-2 Shimonosato, Hirara, Miyakojima, Okinawa</span>
+        <span data-lang="zh">沖繩縣宮古島市平良下里65-2 FC-1大樓 1F</span>
+        <span data-lang="ko">오키나와현 미야코지마시 히라라 시모노사토 65-2 FC-1빌딩 1F</span>
+      </p>
+      <p style="margin:0 0 26px;font-size:13px;letter-spacing:0.06em;color:rgba(231,225,213,0.62)">
+        <span data-lang="ja" class="visible">カウンター10席・個室2室</span>
+        <span data-lang="en">Counter 10 seats · 2 private rooms</span>
+        <span data-lang="zh">吧台10席・包廂2間</span>
+        <span data-lang="ko">카운터 10석・개인실 2실</span>
+      </p>
+    </div>
+    <div style="height:240px;overflow:hidden;filter:grayscale(0.35) brightness(0.82)">
+      <iframe src="https://maps.google.com/maps?q=26.2191,125.7264&z=17&output=embed" title="夢月 地図" loading="lazy" style="width:100%;height:100%;border:0"></iframe>
+    </div>
+    <div style="padding:18px 30px 0">
+      <a href="https://maps.app.goo.gl/ZkexXMUM73kBF4157" target="_blank" rel="noopener" style="font-size:13.5px;letter-spacing:0.1em;border-bottom:1px solid rgba(201,168,106,0.4);padding-bottom:3px">
+        <span data-lang="ja" class="visible">Googleマップで見る</span>
+        <span data-lang="en">View on Google Maps</span>
+        <span data-lang="zh">在Google地圖查看</span>
+        <span data-lang="ko">Google 지도에서 보기</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 10. FINAL CTA -->
+  <section>
+    <div style="position:relative;padding:76px 30px 80px;overflow:hidden;background:#161108">
+      <img src="../assets/hazuki_dining_a19b0923.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.22;filter:saturate(0.7)" />
+      <div style="position:relative;display:flex;flex-direction:column;align-items:center;gap:30px">
+        <img src="../assets/hazuki_logo_v2_c3114890.png" alt="夢月" style="width:56px;height:auto;mix-blend-mode:screen;opacity:0.92" />
+        <p style="margin:0;font-size:22px;line-height:1.9;letter-spacing:0.08em;text-align:center;color:#f4eee3">
+          <span data-lang="ja" class="visible">あなたの一皿を、待っています。</span>
+          <span data-lang="en">We are waiting for your visit.</span>
+          <span data-lang="zh">期待您的光臨。</span>
+          <span data-lang="ko">당신의 한 접시를 기다리고 있습니다.</span>
+        </p>
+        <div style="display:flex;flex-direction:column;gap:14px;width:100%">
+          <a href="https://www.tablecheck.com/ja/mutsuki-miyakojima/reserve/menu" target="_blank" rel="noopener" style="display:block;text-align:center;padding:19px 20px;background:#a9843a;color:#100c07;font-size:16px;letter-spacing:0.14em;font-weight:600">
+            <span data-lang="ja" class="visible">空席を確認して予約する</span>
+            <span data-lang="en">Check Availability & Reserve</span>
+            <span data-lang="zh">確認空位並預約</span>
+            <span data-lang="ko">빈 자리 확인 및 예약</span>
+          </a>
+          <a href="tel:09082922774" style="display:block;text-align:center;padding:17px 20px;border:1px solid rgba(201,168,106,0.45);color:#c9a86a;font-size:15px;letter-spacing:0.16em">090-8292-2774</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:7px;align-items:center">
+          <p style="margin:0;font-size:12px;letter-spacing:0.08em;color:rgba(231,225,213,0.62)">
+            <span data-lang="ja" class="visible">※1名様からご予約OK</span>
+            <span data-lang="en">※Reservations accepted from 1 person</span>
+            <span data-lang="zh">※1人即可預約</span>
+            <span data-lang="ko">※1인부터 예약 가능</span>
+          </p>
+          <p style="margin:0;font-size:12px;letter-spacing:0.08em;color:rgba(231,225,213,0.62);text-align:center">
+            <span data-lang="ja" class="visible">※サーロインをご希望の方はご予約時にお選びください</span>
+            <span data-lang="en">※Please select sirloin at the time of reservation if desired.</span>
+            <span data-lang="zh">※如希望沙朗，請於預約時選擇。</span>
+            <span data-lang="ko">※서로인을 원하시면 예약 시 선택해 주세요.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div style="padding:28px 30px 36px;text-align:center;border-top:1px solid rgba(201,168,106,0.15)">
+      <p style="margin:0;font-size:11.5px;letter-spacing:0.24em;color:rgba(231,225,213,0.6)">
+        <span data-lang="ja" class="visible">高級肉料理専門店 夢月｜完全予約制</span>
+        <span data-lang="en">MUTSUKI Premium Meat Restaurant | Reservation Required</span>
+        <span data-lang="zh">高級肉料理專門店 夢月｜完全預約制</span>
+        <span data-lang="ko">고급 육류 요리 전문점 夢月｜완전 예약제</span>
+      </p>
+    </div>
+  </section>
+
+</div>
+</div>
+
+<script>
+function setLang(lang) {
+  // Update all inline spans
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    el.classList.toggle('visible', el.getAttribute('data-lang') === lang);
+  });
+  // Update block paragraphs
+  document.querySelectorAll('[data-lang-block]').forEach(el => {
+    el.classList.toggle('visible', el.getAttribute('data-lang-block') === lang);
+  });
+  // Update list items
+  document.querySelectorAll('[data-lang-li]').forEach(el => {
+    el.classList.toggle('visible', el.getAttribute('data-lang-li') === lang);
+  });
+  // Update buttons
+  ['ja','en','zh','ko'].forEach(l => {
+    const btn = document.getElementById('btn-' + l);
+    if (btn) btn.classList.toggle('active', l === lang);
+  });
+  // Update html lang attribute
+  document.documentElement.lang = lang === 'zh' ? 'zh-TW' : lang === 'ko' ? 'ko' : lang === 'en' ? 'en' : 'ja';
+  // Save preference
+  try { localStorage.setItem('hazuki_lang', lang); } catch(e) {}
+}
+
+// Restore saved language or detect browser language
+(function() {
+  var saved;
+  try { saved = localStorage.getItem('hazuki_lang'); } catch(e) {}
+  if (saved && ['ja','en','zh','ko'].includes(saved)) {
+    setLang(saved);
+    return;
+  }
+  var nav = (navigator.language || navigator.userLanguage || 'ja').toLowerCase();
+  if (nav.startsWith('zh')) setLang('zh');
+  else if (nav.startsWith('ko')) setLang('ko');
+  else if (nav.startsWith('en')) setLang('en');
+  else setLang('ja');
+})();
+</script>
+</body>
+</html>
