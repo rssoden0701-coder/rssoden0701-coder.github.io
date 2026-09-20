@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<script>(function(){var s=["monitor","tsukiyokai","douhan","matsuri","hazuki","hazuki_v2","alacarte","september","september2","staff-payroll-h7c4n9q2"];var p=window.location.pathname;for(var i=0;i<s.length;i++){var d=s[i];if(p==="/"+d||p==="/"+d+"/"){window.location.replace("/"+d+"/index.html");break;}}})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>夢月 MUTSUKI｜宮古島のステーキ・鉄板料理｜ステーキセット ¥4,000〜</title>
+<meta name="description" content="宮古島・平良のステーキと鉄板料理「夢月 MUTSUKI」。沖縄のもとぶ牛、熊本の阿蘇あか牛を、目の前の鉄板で。ステーキセット¥4,400〜、コース¥8,800〜。17:00〜24:00・1名様からご予約可。">
+<style>
+:root{
+  --navy:#0f1829; --navy2:#1a2744; --navy3:#243352;
+  --gold:#c9a961; --gold-l:#e0c88a;
+  --ivory:#f5f2ea; --ivory2:#faf8f3;
+  --text:#2b3038; --muted:#8b9099;
+  --mincho:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP",serif;
+  --sans:"Hiragino Sans","Yu Gothic","Noto Sans JP",sans-serif;
+  --num:"Helvetica Neue",Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--mincho);color:var(--text);background:var(--ivory2);line-height:1.9;
+     font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* ---------- header ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 20px;
+  display:flex;align-items:center;justify-content:space-between;
+  background:linear-gradient(180deg,rgba(15,24,41,.88),rgba(15,24,41,0));transition:background .4s}
+header.solid{background:rgba(15,24,41,.97);box-shadow:0 1px 20px rgba(0,0,0,.3)}
+.brand{display:flex;align-items:center;gap:11px}
+.brand img{height:40px;width:auto}
+.brand .bt{color:#fff;font-size:19px;letter-spacing:.22em;line-height:1.15}
+.brand .bt small{display:block;font-family:var(--num);font-size:8px;letter-spacing:.4em;
+  color:var(--gold);margin-top:3px;font-weight:500}
+.hnav{display:flex;align-items:center;gap:16px}
+.lang{display:flex;gap:9px;font-family:var(--num);font-size:11px;letter-spacing:.08em}
+.lang a{color:rgba(255,255,255,.55)}
+.lang a.on{color:var(--gold)}
+.btn-book{background:var(--gold);color:var(--navy);padding:9px 20px;font-size:13px;
+  letter-spacing:.12em;border-radius:1px;white-space:nowrap;transition:.3s;font-family:var(--sans)}
+.btn-book:hover{background:var(--gold-l)}
+@media(max-width:600px){.lang{display:flex;gap:5px;font-size:10px;letter-spacing:.04em}.brand{font-size:17px}header{padding:11px 12px}
+  .btn-book{padding:7px 11px;font-size:11px}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;
+  text-align:center;color:#fff;padding:110px 22px 70px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;
+  background:url('assets/hero_clean-JzKiYKtYDcGwHdQbjL3NM9.webp') center/cover no-repeat;
+  transform:scale(1.04)}
+.hero-bg::after{content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(9,15,28,.72) 0%,rgba(9,15,28,.5) 45%,rgba(9,15,28,.88) 100%)}
+.hero-in{position:relative;z-index:2;max-width:760px}
+.hero-logo{width:clamp(150px,22vw,205px);margin:0 auto 30px;
+  filter:drop-shadow(0 3px 30px rgba(0,0,0,.55))}
+.moon{width:52px;height:52px;margin:0 auto 26px;border-radius:50%;
+  background:radial-gradient(circle at 34% 30%,#fff8e6,var(--gold) 60%,#8a7038);
+  box-shadow:0 0 44px rgba(201,169,97,.5)}
+.hero h1{font-size:clamp(27px,6.4vw,50px);letter-spacing:.11em;line-height:1.55;font-weight:400;
+  text-shadow:0 2px 26px rgba(0,0,0,.5)}
+.hero h1 em{font-style:normal;color:var(--gold-l)}
+.hero .sub{margin-top:22px;font-size:clamp(13px,3.1vw,16px);letter-spacing:.16em;
+  color:rgba(255,255,255,.9);line-height:2.1}
+.hero-cta{margin-top:40px;display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
+.cta{padding:15px 34px;font-size:14px;letter-spacing:.14em;border-radius:1px;
+  font-family:var(--sans);transition:.3s;border:1px solid transparent}
+.cta-g{background:var(--gold);color:var(--navy);font-weight:600}
+.cta-g:hover{background:var(--gold-l)}
+.cta-o{border-color:rgba(255,255,255,.55);color:#fff}
+.cta-o:hover{background:rgba(255,255,255,.12)}
+.hero-note{margin-top:26px;font-family:var(--sans);font-size:11.5px;letter-spacing:.1em;
+  color:rgba(255,255,255,.62)}
+
+/* ---------- sections ---------- */
+section{padding:88px 22px}
+.wrap{max-width:1080px;margin:0 auto}
+.narrow{max-width:800px;margin:0 auto}
+.eyebrow{font-family:var(--num);font-size:10.5px;letter-spacing:.34em;color:var(--gold);
+  text-align:center;margin-bottom:13px;font-weight:600}
+.stitle{text-align:center;font-size:clamp(22px,4.6vw,32px);letter-spacing:.1em;
+  color:var(--navy2);line-height:1.6;font-weight:400}
+.slead{text-align:center;margin-top:20px;font-size:15px;line-height:2.15;color:#4a5058}
+.rule{width:38px;height:1px;background:var(--gold);margin:22px auto 0}
+
+/* campaign */
+.camp{background:#fff;padding-bottom:80px}
+.camp2{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:48px}
+.ci{border:1px solid var(--gold);padding:30px 30px 32px;display:flex;flex-direction:column;
+  position:relative;background:linear-gradient(180deg,#fffdf8,#fff)}
+.ci .cd{display:inline-block;align-self:flex-start;background:var(--navy2);color:var(--gold-l);
+  font-family:var(--sans);font-size:11px;letter-spacing:.13em;padding:5px 14px;margin-bottom:16px}
+.ci h3{font-size:20px;letter-spacing:.06em;color:var(--navy2);line-height:1.6;font-weight:400;margin-bottom:12px}
+.ci p{font-size:13.5px;line-height:2;color:#5a6068}
+.ci p.sup{margin-top:14px;padding:13px 15px;background:#fbf7ee;border-left:2px solid var(--gold);
+  font-size:12.5px;line-height:1.95;color:#5a5347;flex:1}
+.ci p.sup b{color:var(--navy2);font-weight:600}
+.ci .cp{margin-top:18px;font-family:var(--num);font-size:29px;color:var(--navy2);font-weight:500;line-height:1}
+.ci .cp .was{font-family:var(--num);font-size:15px;color:#a8adb5;text-decoration:line-through;margin-right:9px;font-weight:400}
+.ci .cp span{font-size:12px;color:var(--muted);margin-left:5px;font-family:var(--sans)}
+.ci .cbtn{margin-top:20px;text-align:center;background:var(--navy2);color:#fff;padding:13px;
+  font-family:var(--sans);font-size:13px;letter-spacing:.1em;transition:.3s}
+.ci .cbtn:hover{background:var(--gold);color:var(--navy)}
+.ci.cbtop{border-color:#b38a48;background:linear-gradient(140deg,#162747,#0c172a);color:#fff}.ci.cbtop .cd{background:#c86646;color:#fff}.ci.cbtop h3{color:#fff}.ci.cbtop p{color:rgba(255,255,255,.77)}.ci.cbtop p.sup{background:rgba(255,255,255,.08);color:rgba(255,255,255,.82);border-left-color:var(--gold)}.cbtop .cb-amounts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:17px}.cbtop .cb-amount{padding:13px 9px 12px;background:rgba(0,0,0,.23);border-top:1px solid rgba(224,200,138,.4)}.cbtop .cb-amount b{display:block;color:var(--gold-l);font-family:var(--num);font-size:26px;line-height:1}.cbtop .cb-amount span{display:block;margin-top:5px;font-size:10.5px;color:rgba(255,255,255,.7);line-height:1.45}.cbtop .cbtn{background:var(--gold);color:var(--navy);font-weight:600}
+@media(max-width:760px){.camp2{grid-template-columns:1fr;gap:18px}.ci{padding:26px 22px 28px}}
+
+/* promise */
+.promise{background:var(--ivory)}
+.p3{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:52px}
+.p3 .it{text-align:center}
+.p3 .n{font-family:var(--num);font-size:11px;letter-spacing:.28em;color:var(--gold);margin-bottom:11px}
+.p3 h3{font-size:17px;letter-spacing:.06em;color:var(--navy2);margin-bottom:11px;font-weight:400}
+.p3 p{font-size:13.5px;line-height:2;color:#5a6068}
+@media(max-width:760px){.p3{grid-template-columns:1fr;gap:36px}}
+
+/* steak */
+.steak{background:var(--navy);color:#fff}
+.steak .stitle{color:#fff}
+.steak .slead{color:rgba(255,255,255,.82)}
+.badge{display:inline-block;background:var(--gold);color:var(--navy);font-family:var(--sans);
+  font-size:11px;letter-spacing:.16em;padding:5px 15px;border-radius:1px;font-weight:600;margin-bottom:16px}
+.tac{text-align:center}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:24px;margin-top:52px}
+.c{background:rgba(255,255,255,.045);border:1px solid rgba(201,169,97,.28);
+  overflow:hidden;display:flex;flex-direction:column;transition:.35s}
+.c:hover{border-color:var(--gold);transform:translateY(-4px)}
+.c.feat{border-color:var(--gold);box-shadow:0 0 40px rgba(201,169,97,.14)}
+.c .ph{aspect-ratio:4/3;overflow:hidden;position:relative;background:#1a2028}
+.c .ph img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.c:hover .ph img{transform:scale(1.06)}
+.c .tag{position:absolute;top:0;left:0;background:var(--gold);color:var(--navy);
+  font-family:var(--sans);font-size:10.5px;letter-spacing:.12em;padding:5px 13px;font-weight:600}
+.c .bd{padding:24px 22px 26px;flex:1;display:flex;flex-direction:column}
+.c .org{font-family:var(--num);font-size:10px;letter-spacing:.24em;color:var(--gold);margin-bottom:8px}
+.c h3{font-size:19px;letter-spacing:.05em;line-height:1.55;font-weight:400;margin-bottom:12px}
+.c p{font-size:13px;line-height:1.95;color:rgba(255,255,255,.66);flex:1}
+.c .pr{margin-top:18px;padding-top:16px;border-top:1px solid rgba(201,169,97,.24);
+  font-family:var(--num);font-size:27px;color:var(--gold);letter-spacing:.02em;font-weight:500}
+.c .pr span{font-size:12px;color:rgba(255,255,255,.5);margin-left:5px;font-family:var(--sans)}
+.c .pr2{margin-top:6px;font-family:var(--num);font-size:20px;color:var(--gold-l);
+  letter-spacing:.02em;font-weight:500;opacity:.85}
+.c .pr2 span{font-size:11.5px;color:rgba(255,255,255,.45);margin-left:5px;font-family:var(--sans)}
+
+/* a la carte */
+.alacarte{margin-top:46px;padding:28px 32px;border:1px solid rgba(201,169,97,.34)}
+.alacarte h3{font-size:18px;letter-spacing:.1em;color:var(--gold-l);font-weight:400;margin-bottom:6px}
+.ac-lead{font-size:13px;color:rgba(255,255,255,.6);margin-bottom:18px}
+.aclist{list-style:none;font-size:14.5px}
+.aclist li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+  padding:11px 0;border-bottom:1px solid rgba(255,255,255,.11);color:rgba(255,255,255,.92)}
+.aclist li:last-child{border-bottom:none}
+.aclist .pz{font-family:var(--num);font-size:14px;color:var(--gold);white-space:nowrap;letter-spacing:.02em}
+.acnote{margin-top:18px;padding-top:16px;border-top:1px solid rgba(201,169,97,.28);
+  font-size:14px;color:var(--gold-l);text-align:center;letter-spacing:.04em}
+@media(max-width:560px){
+  .alacarte{padding:22px 18px}
+  .aclist li{flex-direction:column;gap:3px;align-items:flex-start}
+}
+@media(max-width:860px){.cards{grid-template-columns:1fr;gap:20px;max-width:430px;margin:44px auto 0}}
+.setnote{margin-top:44px;padding:26px 30px;background:rgba(255,255,255,.05);
+  border-left:2px solid var(--gold);font-size:14px;line-height:2.05;color:rgba(255,255,255,.86)}
+.setnote b{color:var(--gold-l);font-weight:400}
+
+/* course */
+#course{background:var(--navy);color:#fff}
+#course .stitle{color:#fff}
+#course .slead{color:rgba(255,255,255,.75)}
+#course .rule{background:var(--gold)}
+.crs{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:56px}
+.crs .r{
+  border:1px solid rgba(201,169,97,.22);
+  padding:0;
+  display:flex;flex-direction:column;
+  transition:.35s;
+  background:rgba(255,255,255,.035);
+  overflow:hidden;
+  position:relative;
+}
+.crs .r:hover{border-color:var(--gold);background:rgba(255,255,255,.06);transform:translateY(-3px)}
+.crs .r-head{
+  padding:32px 30px 24px;
+  border-bottom:1px solid rgba(201,169,97,.18);
+  display:flex;align-items:flex-start;justify-content:space-between;gap:16px;
+}
+.crs .r-body{padding:24px 30px 28px;flex:1;display:flex;flex-direction:column}
+.crs .moon-icon{
+  width:48px;height:48px;flex-shrink:0;
+  border-radius:50%;position:relative;overflow:hidden;
+}
+.crs .moon-new{background:radial-gradient(circle at 70% 50%,#0f1829 55%,rgba(201,169,97,.15) 100%);border:1px solid rgba(201,169,97,.3)}
+.crs .moon-crescent{background:radial-gradient(circle at 62% 50%,#0f1829 42%,var(--gold) 100%)}
+.crs .moon-half{background:linear-gradient(90deg,var(--gold) 50%,#0f1829 50%);border:1px solid rgba(201,169,97,.3)}
+.crs .moon-full{background:radial-gradient(circle at 38% 34%,#fff8e6,var(--gold) 60%,#8a7038);box-shadow:0 0 24px rgba(201,169,97,.4)}
+.crs .mn{font-family:var(--num);font-size:9.5px;letter-spacing:.32em;color:var(--gold);margin-bottom:8px;font-weight:600}
+.crs h3{font-size:24px;letter-spacing:.1em;color:#fff;font-weight:400;line-height:1.3}
+.crs .dishes{font-family:var(--num);font-size:11px;letter-spacing:.18em;color:rgba(255,255,255,.45);margin-top:5px}
+.crs .desc{font-size:13.5px;line-height:2.05;color:rgba(255,255,255,.75);flex:1}
+.crs .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.crs .tag-item{font-family:var(--sans);font-size:10.5px;letter-spacing:.1em;color:rgba(255,255,255,.55);
+  border:1px solid rgba(255,255,255,.18);padding:4px 11px;border-radius:1px}
+.crs .r-foot{padding:20px 30px 26px;border-top:1px solid rgba(201,169,97,.18);display:flex;align-items:center;justify-content:space-between;gap:12px}
+.crs .pr{font-family:var(--num);font-size:26px;color:var(--gold);font-weight:500;line-height:1}
+.crs .pr span{font-size:11.5px;color:rgba(255,255,255,.45);margin-left:5px;font-family:var(--sans)}
+.crs .rbtn{font-family:var(--sans);font-size:12px;letter-spacing:.12em;color:var(--gold);
+  border:1px solid rgba(201,169,97,.5);padding:9px 18px;white-space:nowrap;transition:.3s}
+.crs .rbtn:hover{background:var(--gold);color:var(--navy)}
+@media(max-width:820px){.crs{grid-template-columns:1fr;gap:16px}}
+@media(max-width:500px){.crs .r-head,.crs .r-body,.crs .r-foot{padding-left:22px;padding-right:22px}}
+
+/* meat */
+.meat{background:var(--ivory)}
+.m4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:50px}
+.m4 .it{background:#fff;overflow:hidden}
+.m4 .ph{aspect-ratio:1;overflow:hidden}
+.m4 .ph img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.m4 .it:hover img{transform:scale(1.07)}
+.m4 .bd{padding:18px 17px 22px}
+.m4 .rg{font-family:var(--num);font-size:9.5px;letter-spacing:.2em;color:var(--gold);margin-bottom:6px}
+.m4 h3{font-size:15.5px;letter-spacing:.04em;color:var(--navy2);font-weight:400;margin-bottom:8px}
+.m4 p{font-size:12.5px;line-height:1.9;color:#65696f}
+@media(max-width:860px){.m4{grid-template-columns:repeat(2,1fr);gap:14px}}
+
+/* tsukimachi */
+.tm{background:var(--navy2);color:#fff;position:relative;overflow:hidden}
+.tm .stitle{color:#fff}
+.tm-in{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;margin-top:50px}
+.tm-ph{aspect-ratio:4/3;overflow:hidden}
+.tm-ph img{width:100%;height:100%;object-fit:cover}
+.tm h3{font-size:22px;letter-spacing:.09em;font-weight:400;margin-bottom:18px;line-height:1.6}
+.tm p{font-size:14px;line-height:2.15;color:rgba(255,255,255,.8);margin-bottom:22px}
+.tmlist{list-style:none;font-size:13.5px}
+.tmlist li{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.13);
+  display:flex;justify-content:space-between;gap:14px;color:rgba(255,255,255,.9)}
+.tmlist li span{font-family:var(--num);color:var(--gold);white-space:nowrap}
+@media(max-width:820px){.tm-in{grid-template-columns:1fr;gap:32px}}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-top:48px}
+.gal div{aspect-ratio:1;overflow:hidden}
+.gal img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.gal div:hover img{transform:scale(1.07)}
+@media(max-width:700px){.gal{grid-template-columns:repeat(2,1fr);gap:8px}}
+
+/* info */
+.info{background:var(--ivory)}
+.itab{margin-top:46px;background:#fff;padding:38px 40px}
+.itab dl{display:grid;grid-template-columns:118px 1fr;gap:0}
+.itab dt{padding:15px 0;border-bottom:1px solid #eae6dc;font-size:13px;letter-spacing:.1em;
+  color:var(--gold);font-family:var(--sans)}
+.itab dd{padding:15px 0;border-bottom:1px solid #eae6dc;font-size:14.5px;line-height:1.95;color:#3a4048}
+.itab dd b{color:var(--navy2);font-weight:600}
+.itab dl>*:nth-last-child(-n+2){border-bottom:none}
+@media(max-width:640px){.itab{padding:26px 22px}.itab dl{grid-template-columns:1fr}
+  .itab dt{padding:14px 0 3px;border-bottom:none}.itab dd{padding:0 0 14px}}
+.mapbox{margin-top:22px;aspect-ratio:16/8;background:#e8e4da;overflow:hidden}
+.mapbox iframe{width:100%;height:100%;border:0}
+
+/* final cta */
+.fcta{background:var(--navy);color:#fff;text-align:center;padding:96px 22px}
+.fcta h2{font-size:clamp(21px,4.4vw,31px);letter-spacing:.1em;font-weight:400;line-height:1.7}
+.fcta p{margin-top:20px;font-size:14.5px;color:rgba(255,255,255,.78);line-height:2.1}
+.fcta .row{margin-top:38px;display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
+.tel{font-family:var(--num);font-size:24px;color:var(--gold);letter-spacing:.06em;
+  margin-top:30px;display:inline-block}
+
+footer{background:#0a1120;color:rgba(255,255,255,.42);text-align:center;
+  padding:38px 22px;font-size:11.5px;letter-spacing:.1em;font-family:var(--sans);line-height:2}
+footer .fb{color:#fff;font-family:var(--mincho);font-size:17px;letter-spacing:.22em;margin-bottom:12px}
+
+.rev{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+.rev.in{opacity:1;transform:none}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HFSMMRGY03"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HFSMMRGY03');
+  gtag('config', 'AW-18316049919');
+</script>
+<meta property="og:type" content="website">
+		<meta property="og:url" content="https://mutsuki-miyakojima.com/">
+		<meta property="og:title" content="夢月 MUTSUKI｜宮古島のステーキ・鉄板料理｜ステーキセット ¥4,000〜">
+		<meta property="og:description" content="宮古島・平良のステーキと鉄板料理「夢月 MUTSUKI」。沖縄のもとぶ牛、熊本の阿蘇あか牛を、目の前の鉄板で。ステーキセット¥4,400〜、コース¥8,800〜。17:00〜24:00・1名様からご予約可。">
+		<meta property="og:image" content="https://mutsuki-miyakojima.com/assets/hero_clean-JzKiYKtYDcGwHdQbjL3NM9.webp">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="夢月 MUTSUKI｜宮古島のステーキ・鉄板料理｜ステーキセット ¥4,000〜">
+		<meta name="twitter:description" content="宮古島・平良のステーキと鉄板料理「夢月 MUTSUKI」。沖縄のもとぶ牛、熊本の阿蘇あか牛を、目の前の鉄板で。ステーキセット¥4,400〜、コース¥8,800〜。17:00〜24:00・1名様からご予約可。">
+		<meta name="twitter:image" content="https://mutsuki-miyakojima.com/assets/hero_clean-JzKiYKtYDcGwHdQbjL3NM9.webp">
+		<meta name="twitter:image:width" content="1200">
+		<meta name="twitter:image:height" content="630"><link rel="canonical" href="https://mutsuki-miyakojima.com/" /></head>
+<body>
+
+<header id="hd">
+  <a href="#" class="brand"><img src="assets/logo-mark-gold_0efc1207.png" alt="夢月 MUTSUKI"></a>
+  <div class="hnav">
+    <div class="lang"><a href="index.html" class="on">JA</a><a href="index-en.html">EN</a><a href="index-it.html">IT</a><a href="index-ko.html">KO</a><a href="index-zh.html">中文</a></div>
+    <a onclick="gtag('event','reserve_click');" href="https://www.tablecheck.com/ja/mutsuki-miyakojima/reserve" class="btn-book" target="_blank" rel="noopener">ご予約</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-in">
+    <img src="assets/logo-full-gold_c4f9f05a.png" alt="大人の隠れ家 夢月 MUTSUKI 高級肉料理専門店" class="hero-logo">
+    <h1>日本各地から、選び抜いた肉を。<br>目の前の、<em>鉄板</em>で。</h1>
+    <p class="sub">宮古島・平良　カウンター8席の鉄板料理</p>
+    <div class="hero-cta">
+      <a href="#steak" class="cta cta-g">ステーキセット ¥4,000〜</a>
+      <a href="#course" class="cta cta-o">コースを見る</a>
+    </div>
+    <p class="hero-note">17:00〜24:00（最終入店23:00）／1名様〜・ウォークイン歓迎</p>
+  </div>
+</div>
+
+<!-- CAMPAIGN -->
+<section class="camp">
+  <div class="wrap rev">
+    <p class="eyebrow">NOW ON</p>
+    <h2 class="stitle">開催中のご案内</h2>
+    <div class="rule"></div>
+    <div class="camp2">
+      <div class="ci" style="display:none">
+        <span class="cd">8月1日 — 8月16日</span>
+        <h3>1日10食限定<br>阿蘇あか牛ヒレコース</h3>
+        <p>あか牛ヒレの鉄板焼きを主役に、前菜から甘味まで全9品。1日10食のみのご用意です。</p>
+        <p class="sup"><b>食べて、作り手を応援する。</b>このコースお一組につき、夢月から熊本の有働精肉店さまへ応援金をお送りしています。お客様に追加のご負担はございません。</p>
+        <div class="cp"><span class="was">¥16,000</span>8,000<span>円（税抜）</span></div>
+        <a href="/monitor/index.html" class="cbtn">ご予約はこちら</a>
+      </div>
+<div class="ci">
+  <span class="cd">9月18日 — 9月30日｜1日10食限定</span>
+  <h3>幻の地鶏を、<br>刺し・タタキ・鉄板で。</h3>
+  <p>九州最大級の在来種「天草大王」。地鶏刺しの炙り前菜から、ももタタキ、鉄板のもも焼きまで。</p>
+  <p class="sup"><b>天草大王 地鶏スペシャルコース（全6品）。</b>地鶏スープ、俵おにぎり、デザートまでを含む9月後半限定の特別コースです。</p>
+  <div class="cp"><span class="was">12,000円</span>6,000<span>円（税抜）</span></div>
+  <a href="/september2/index.html" class="cbtn">詳細・ご予約はこちら →</a>
+</div>
+      <div class="ci cbtop">
+        <span class="cd">9月1日 — 9月30日｜九月の特典</span>
+        <h3>最大 5,000円<br>キャッシュバック</h3>
+        <p>九月は、島民の方と事前決済でご予約の方にキャッシュバックをご用意しています。</p>
+        <div class="cb-amounts">
+          <div class="cb-amount"><b>5,000円 CB</b><span>宮古島市在住の方</span></div>
+          <div class="cb-amount"><b>3,000円 CB</b><span>事前決済でご予約の方</span></div>
+        </div>
+        <p class="sup">いずれも事前予約・事前決済・コースのみ対象です。詳細条件をご確認ください。</p>
+        <a onclick="gtag('event','reserve_click');" href="https://www.tablecheck.com/ja/mutsuki-miyakojima/reserve" class="cbtn" target="_blank" rel="noopener">特典対象コースを予約する →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMISE -->
+<section class="promise">
+  <div class="wrap rev">
+    <p class="eyebrow">OUR PROMISE</p>
+    <h2 class="stitle">夢月が守っている、三つのこと</h2>
+    <div class="rule"></div>
+    <div class="p3">
+      <div class="it">
+        <div class="n">01</div>
+        <h3>銘柄と部位で選び抜く</h3>
+        <p>沖縄のもとぶ牛、熊本の阿蘇あか牛。産地と銘柄、そして部位までを吟味し、納得したものだけを仕入れています。</p>
+      </div>
+      <div class="it">
+        <div class="n">02</div>
+        <h3>目の前の鉄板で仕上げる</h3>
+        <p>石のプレートと鉄板で、一皿ずつお客様の目の前で焼き上げます。焼き加減はその場で調えます。</p>
+      </div>
+      <div class="it">
+        <div class="n">03</div>
+        <h3>カウンター8席 ＋ 個室2室</h3>
+        <p>カウンター8席と4名個室2室。お一人でも、大切な方とでも過ごせる静かな時間をご用意しています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEAK SET -->
+<section class="steak" id="steak">
+  <div class="wrap rev">
+    <div class="tac"><span class="badge">STEAK SET</span></div>
+    <p class="eyebrow">気軽に、鉄板の一皿を</p>
+    <h2 class="stitle">ステーキセット</h2>
+    <div class="rule"></div>
+    <p class="slead">サラダ・鉄板ステーキ・俵おにぎり・スープ。<br>塩は三日月に敷いて、石の皿でお出しします。</p>
+
+    <div class="cards">
+      <div class="c feat">
+        <div class="ph">
+          <span class="tag">沖縄県産</span>
+          <img src="assets/steak-motobu-akami_4c8cf43d.webp" alt="もとぶ牛赤身ステーキ">
+        </div>
+        <div class="bd">
+          <div class="org">MOTOBU WAGYU / OKINAWA</div>
+          <h3>もとぶ牛<br>赤身ステーキ</h3>
+          <p>沖縄・本部町で育てられた黒毛和牛。肩バラの赤身を、噛むほどに旨みの出る厚さで焼き上げます。</p>
+          <div class="pr">4,000<span>円 / 100g</span></div>
+          <div class="pr2">5,000<span>円 / 150g</span></div>
+          <a class="sbtn" onclick="gtag('event','reserve_click');" href="https://www.tablecheck.com/ja/mutsuki-miyakojima/reserve/menu?menu_lists=6a86b0498e978b06dd73fd0b" target="_blank" rel="noopener" style="display:block;margin-top:16px;padding:10px 12px;border:1px solid rgba(201,169,97,.62);color:#e0c88a;text-align:center;font-family:var(--sans);font-size:12px;letter-spacing:.08em;transition:.25s">このステーキを予約</a>
+        </div>
+      </div>
+      <div class="c">
+        <div class="ph">
+          <span class="tag">沖縄県産</span>
+          <img src="assets/steak-motobu-ichibo_7eec3b02.webp" alt="もとぶ牛いちぼステーキ">
+        </div>
+        <div class="bd">
+          <div class="org">MOTOBU WAGYU / OKINAWA</div>
+          <h3>もとぶ牛<br>いちぼステーキ</h3>
+          <p>もも肉の先端、一頭からわずかしか取れない部位。赤身の香りとやわらかな脂を、いちばん味わえます。</p>
+          <div class="pr">6,000<span>円 / 100g</span></div>
+          <div class="pr2">8,000<span>円 / 150g</span></div>
+          <a class="sbtn" onclick="gtag('event','reserve_click');" href="https://www.tablecheck.com/ja/mutsuki-miyakojima/reserve/menu?menu_lists=6a86b0498e978b06dd73fd0b" target="_blank" rel="noopener" style="display:block;margin-top:16px;padding:10px 12px;border:1px solid rgba(201,169,97,.62);color:#e0c88a;text-align:center;font-family:var(--sans);font-size:12px;letter-spacing:.08em;transition:.25s">このステーキを予約</a>
+        </div>
+      </div>
+      <div class="c">
+        <div class="ph">
+          <span class="tag">熊本県産</span>
+          <img src="assets/IMG_1700(1)_b668577e.jpg" alt="阿蘇あか牛ヒレステーキ">
+        </div>
+        <div class="bd">
+          <div class="org">ASO AKAUSHI / KUMAMOTO</div>
+          <h3>阿蘇あか牛<br>ヒレステーキ</h3>
+          <p>阿蘇の草原で育つ褐毛和種。もっともやわらかなヒレを、赤身の旨みごと鉄板で。</p>
+          <div class="pr">9,000<span>円 / 120g</span></div>
+          <div class="pr2">11,000<span>円 / 180g</span></div>
+          <a class="sbtn" onclick="gtag('event','reserve_click');" href="https://www.tablecheck.com/ja/mutsuki-miyakojima/reserve/menu?menu_lists=6a86b0498e978b06dd73fd0b" target="_blank" rel="noopener" style="display:block;margin-top:16px;padding:10px 12px;border:1px solid rgba(201,169,97,.62);color:#e0c88a;text-align:center;font-family:var(--sans);font-size:12px;letter-spacing:.08em;transition:.25s">このステーキを予約</a>
+        </div>
+      </div>
+      <div class="c">
+        <div class="ph">
+          <span class="tag">熊本県産</span>
+          <img src="assets/IMG_1799_e903485a.JPG" alt="阿蘇あか牛サーロインステーキ">
+        </div>
+        <div class="bd">
+          <div class="org">ASO AKAUSHI / KUMAMOTO</div>
+          <h3>阿蘇あか牛<br>サーロインステーキ</h3>
+          <p>赤身の旨みと、軽やかな脂。厚みのある一枚を、鉄板でじっくりと焼き上げます。</p>
+          <div class="pr">11,000<span>円 / 200g</span></div>
+          <a class="sbtn" onclick="gtag('event','reserve_click');" href="https://www.tablecheck.com/ja/mutsuki-miyakojima/reserve/menu?menu_lists=6a86b0498e978b06dd73fd0b" target="_blank" rel="noopener" style="display:block;margin-top:16px;padding:10px 12px;border:1px solid rgba(201,169,97,.62);color:#e0c88a;text-align:center;font-family:var(--sans);font-size:12px;letter-spacing:.08em;transition:.25s">このステーキを予約</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="alacarte narrow">
+      <h3>ステーキ単品</h3>
+      <p class="ac-lead">お肉だけをお召し上がりいただけます。</p>
+      <ul class="aclist">
+        <li><span class="nm">もとぶ牛 赤身</span><span class="pz">100g ¥2,500　/　150g ¥3,500</span></li>
+        <li><span class="nm">もとぶ牛 いちぼ</span><span class="pz">100g ¥4,500　/　150g ¥5,500</span></li>
+        <li><span class="nm">阿蘇あか牛 ヒレ</span><span class="pz">120g ¥7,500　/　180g ¥9,500</span></li>
+        <li><span class="nm">阿蘇あか牛 サーロイン</span><span class="pz">200g ¥9,500</span></li>
+      </ul>
+      <p class="acnote">＋¥1,500 でセットになります（サラダ・俵おにぎり・スープ付き）</p>
+      <a class="seatbtn" onclick="gtag('event','reserve_click');" href="https://www.tablecheck.com/mutsuki-miyakojima/reserve?menu_items=6a3b35f2494cfd1bb03dfb96" target="_blank" rel="noopener" style="display:block;margin-top:20px;padding:13px 16px;background:#c9a961;color:#0f1829;text-align:center;font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.1em">席のみ予約</a>
+    </div>
+  </div>
+</section>
+
+<!-- COURSE -->
+<section id="course">
+  <div class="wrap rev">
+    <p class="eyebrow">COURSE</p>
+    <h2 class="stitle">月の四章</h2>
+    <div class="rule"></div>
+    <p class="slead">前菜から甘味まで、月の満ち欠けになぞらえた四つのコース。<br>記念日や会食に、ゆっくりとお過ごしいただけます。</p>
+
+    <div class="crs">
+      <!-- 新月 -->
+      <div class="r">
+        <div class="r-head">
+          <div>
+            <div class="mn">NEW MOON</div>
+            <h3>新月</h3>
+            <div class="dishes">全 8 品</div>
+          </div>
+          <div class="moon-icon moon-new"></div>
+        </div>
+        <div class="r-body">
+          <p class="desc">鹿児島産高級黒豚のしゃぶしゃぶ、または阿蘇あか牛の炙りもつ鍋。夢月への入口となる、やさしくも滋味深いコース。前菜・鍋・〆・甘味まで全8品でお楽しみいただけます。</p>
+          <div class="tags">
+            <span class="tag-item">鹿児島黒豚</span>
+            <span class="tag-item">阿蘇あか牛</span>
+            <span class="tag-item">はじめての夢月に</span>
+          </div>
+        </div>
+        <div class="r-foot">
+          <div class="pr">8,000<span>円（税抜）</span></div>
+          <a onclick="gtag('event','reserve_click');" href="https://www.tablecheck.com/ja/mutsuki-miyakojima/reserve" class="rbtn" target="_blank" rel="noopener">ご予約</a>
+        </div>
+      </div>
+      <!-- 三日月 -->
+      <div class="r">
+        <div class="r-head">
+          <div>
+            <div class="mn">CRESCENT</div>
+            <h3>三日月</h3>
+            <div class="dishes">全 9 品</div>
+          </div>
+          <div class="moon-icon moon-crescent"></div>
+        </div>
+        <div class="r-body">
+          <p class="desc">阿蘇あか牛・熊本県産馬肉・天草大王地鶏の三種から一種をお選びいただく鉄板コース。選んだ一頭と向き合う、集中した時間。前菜から甘味まで全9品。</p>
+          <div class="tags">
+            <span class="tag-item">阿蘇あか牛</span>
+            <span class="tag-item">馬肉</span>
+            <span class="tag-item">天草大王地鶏</span>
+            <span class="tag-item">一種選択</span>
+          </div>
+        </div>
+        <div class="r-foot">
+          <div class="pr">12,000<span>円（税抜）</span></div>
+          <a onclick="gtag('event','reserve_click');" href="https://www.tablecheck.com/ja/mutsuki-miyakojima/reserve" class="rbtn" target="_blank" rel="noopener">ご予約</a>
+        </div>
+      </div>
+      <!-- 上弦の月 -->
+      <div class="r">
+        <div class="r-head">
+          <div>
+            <div class="mn">HALF MOON</div>
+            <h3>上弦の月</h3>
+            <div class="dishes">全 10 品</div>
+          </div>
+          <div class="moon-icon moon-half"></div>
+        </div>
+        <div class="r-body">
+          <p class="desc">三種の銘肉から二種を選び、鉄板で食べ比べていただくコース。産地も個性も異なる肉を並べることで、それぞれの味わいがより鮮明になります。全10品。</p>
+          <div class="tags">
+            <span class="tag-item">二種食べ比べ</span>
+            <span class="tag-item">記念日に</span>
+            <span class="tag-item">会食に</span>
+          </div>
+        </div>
+        <div class="r-foot">
+          <div class="pr">15,000<span>円（税抜）</span></div>
+          <a onclick="gtag('event','reserve_click');" href="https://www.tablecheck.com/ja/mutsuki-miyakojima/reserve" class="rbtn" target="_blank" rel="noopener">ご予約</a>
+        </div>
+      </div>
+      <!-- 十三夜月 -->
+      <div class="r">
+        <div class="r-head">
+          <div>
+            <div class="mn">FULL MOON</div>
+            <h3>十三夜月</h3>
+            <div class="dishes">全 11 品</div>
+          </div>
+          <div class="moon-icon moon-full"></div>
+        </div>
+        <div class="r-body">
+          <p class="desc">阿蘇あか牛・熊本県産馬肉・天草大王地鶏。三種すべてを鉄板で味わう、夢月の真骨頂。それぞれの産地と生産者への敬意を込めた、夢月最上のコース。全11品。</p>
+          <div class="tags">
+            <span class="tag-item">三種すべて</span>
+            <span class="tag-item">夢月の最高峰</span>
+            <span class="tag-item">特別な夜に</span>
+          </div>
+        </div>
+        <div class="r-foot">
+          <div class="pr">20,000<span>円（税抜）</span></div>
+          <a onclick="gtag('event','reserve_click');" href="https://www.tablecheck.com/ja/mutsuki-miyakojima/reserve" class="rbtn" target="_blank" rel="noopener">ご予約</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEAT -->
+<section class="meat">
+  <div class="wrap rev">
+    <p class="eyebrow">OUR MEAT</p>
+    <h2 class="stitle">肉のこと</h2>
+    <div class="rule"></div>
+    <p class="slead">産地、銘柄、部位。ひとつずつ吟味してから、鉄板にのせています。</p>
+    <div class="m4">
+      <div class="it">
+        <div class="ph"><img src="assets/DSC5726__1_7211e189.webp" alt="もとぶ牛"></div>
+        <div class="bd">
+          <div class="rg">OKINAWA・本部町</div>
+          <h3>もとぶ牛</h3>
+          <p>沖縄県産の黒毛和牛。潮風の島で育つ、県内屈指のブランド牛です。</p>
+        </div>
+      </div>
+      <div class="it">
+        <div class="ph"><img src="assets/real_aso_akagyu_621b149f.jpeg" alt="阿蘇あか牛"></div>
+        <div class="bd">
+          <div class="rg">KUMAMOTO・阿蘇</div>
+          <h3>阿蘇あか牛</h3>
+          <p>阿蘇の草原で放牧される褐毛和種。赤身の旨みと軽やかな脂が特徴です。</p>
+        </div>
+      </div>
+      <div class="it">
+        <div class="ph"><img src="assets/real_amakusa_daio_e4e0c4d2.jpg" alt="天草大王地鶏"></div>
+        <div class="bd">
+          <div class="rg">KUMAMOTO・天草</div>
+          <h3>天草大王</h3>
+          <p>一度絶滅し、復元された幻の地鶏。噛むほどに旨みの出る肉質です。</p>
+        </div>
+      </div>
+      <div class="it">
+        <div class="ph"><img src="assets/real_horse_farm_d6e6fb5a.jpeg" alt="熊本県産馬肉"></div>
+        <div class="bd">
+          <div class="rg">KUMAMOTO</div>
+          <h3>熊本県産馬肉</h3>
+          <p>きめの細かい赤身。鉄板で軽く炙り、旨みを閉じ込めてお出しします。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TSUKIMACHI -->
+<section class="tm" style="display:none">
+  <div class="wrap rev">
+    <p class="eyebrow">LATE NIGHT</p>
+    <h2 class="stitle">月待ち　22:00〜</h2>
+    <div class="rule"></div>
+    <div class="tm-in">
+      <div class="tm-ph"><img src="assets/interior_counter_v2-UcehF3hUeqysks9HKH3seC.webp" alt="カウンター"></div>
+      <div>
+        <h3>夜が更けてからの、<br>くだけた時間。</h3>
+        <p>お食事のあとの一軒に、お仕事帰りに。22時をすぎた夢月は、肩の力を抜いた店になります。ご予約なしで、お好きな一皿とお酒を。</p>
+        <ul class="tmlist">
+          <li>もとぶ牛ホルモンの鉄板焼き<span>¥1,800</span></li>
+          <li>島野菜と香味葉の盛り合わせ<span>¥600</span></li>
+          <li>小鉢三種<span>¥800</span></li>
+          <li>鉄板の茶碗蒸し<span>¥600</span></li>
+          <li>〆の宮古そば（冷・温）<span>¥800</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+  <div class="wrap rev">
+    <p class="eyebrow">GALLERY</p>
+    <h2 class="stitle">店内とお料理</h2>
+    <div class="rule"></div>
+    <div class="gal">
+      <div><img src="assets/interior_wide_v2-MJ6mMNa88whWseSnMo9Q3d.webp" alt="店内"></div>
+      <div><img src="assets/IMG_1700(1)_b668577e.jpg" alt="鉄板焼きメイン"></div>
+      <div><img src="assets/real_IMG_12142_c8f4184a.webp" alt="前菜盛り合わせ"></div>
+      <div><img src="assets/akagyu_sirloin_steak_9932_3b339c78.jpg" alt="鉄板ステーキ"></div>
+      <div><img src="assets/interior_window_v2-AJfamT6MqgZscfi3iLVT8n.webp" alt="店内"></div>
+      <div><img src="assets/real_IMG_1223_bfee37c4.webp" alt="デザート"></div>
+    </div>
+  </div>
+</section>
+
+<!-- INFO -->
+<section class="info">
+  <div class="narrow rev">
+    <p class="eyebrow">INFORMATION</p>
+    <h2 class="stitle">ご案内</h2>
+    <div class="rule"></div>
+    <div class="itab">
+      <dl>
+        <dt>店名</dt><dd>夢月 MUTSUKI（むつき）</dd>
+        <dt>住所</dt><dd>〒906-0013　沖縄県宮古島市平良下里65-2　FC1ビル 1F<br><span style="font-size:13px;color:#8b9099">公設市場すぐ近く</span></dd>
+        <dt>営業時間</dt><dd><b>17:00〜24:00</b>（最終入店 23:00）<br><span style="font-size:13px;color:#8b9099">コース・ステーキ 17:00〜／月待ち 22:00〜</span></dd>
+        <dt>席数</dt><dd>16席（カウンター8席・4名個室×2室）</dd>
+        <dt>ご予約</dt><dd><b>1名様から</b>承ります。時間帯を問わず、ご予約なしでもご案内いたします。</dd>
+        <dt>お支払い</dt><dd>現金・クレジットカード・PayPay</dd>
+        <dt>お電話</dt><dd><a href="tel:09082922774" style="color:#1a2744;font-family:var(--num);font-size:17px">090-8292-2774</a></dd>
+      </dl>
+    </div>
+    <div class="mapbox">
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=24.8045628,125.2780863&z=17&hl=ja&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<div class="fcta">
+  <div class="narrow">
+    <img src="assets/logo-mark-gold_0efc1207.png" alt="夢月 MUTSUKI" style="width:112px;margin:0 auto 26px">
+    <h2>宮古島の夜に、<br>鉄板の一皿を。</h2>
+    <p>ステーキセットは ¥4,000 から。ご予約なしでも、いつでもどうぞ。</p>
+    <div class="row">
+      <a onclick="gtag('event','reserve_click');" href="https://www.tablecheck.com/ja/mutsuki-miyakojima/reserve" class="cta cta-g" target="_blank" rel="noopener">オンラインで予約する</a>
+      <a href="tel:09082922774" class="cta cta-o">電話で予約する</a>
+    </div>
+    <a href="tel:09082922774" class="tel">090-8292-2774</a>
+  </div>
+</div>
+
+<footer>
+  <img src="assets/logo-mark-gold_0efc1207.png" alt="夢月 MUTSUKI" style="width:96px;margin:0 auto 16px;opacity:.9">
+  沖縄県宮古島市平良下里65-2 FC1ビル1F<br>
+  © 2026 MUTSUKI. All rights reserved.
+</footer>
+
+<script>
+addEventListener('scroll',()=>{document.getElementById('hd').classList.toggle('solid',scrollY>60)});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0});
+document.querySelectorAll('.rev').forEach(e=>io.observe(e));
+// フォールバック：3秒後に未表示のものは強制表示
+setTimeout(()=>document.querySelectorAll('.rev:not(.in)').forEach(e=>e.classList.add('in')),3000);
+</script>
+<script>(function(){const url='https://www.tablecheck.com/ja/mutsuki-miyakojima/reserve/menu?menu_lists=6a86b0498e978b06dd73fd0b';const labels={ja:'このステーキを予約',en:'Reserve this steak',it:'Prenota questa bistecca',ko:'이 스테이크 예약','zh-Hant':'預約此牛排',zh:'預約此牛排'};const label=labels[document.documentElement.lang]||'Reserve';document.querySelectorAll('.steak .c .bd').forEach(function(card){if(card.querySelector('.sbtn'))return;const button=document.createElement('a');button.href=url;button.target='_blank';button.rel='noopener';button.className='sbtn';button.textContent=label;button.setAttribute('aria-label',label);button.style.cssText='display:block;margin-top:16px;padding:10px 12px;border:1px solid rgba(201,169,97,.62);color:#e0c88a;text-align:center;font-family:var(--sans);font-size:12px;letter-spacing:.08em;transition:.25s';button.addEventListener('mouseenter',function(){button.style.background='#c9a961';button.style.color='#0f1829'});button.addEventListener('mouseleave',function(){button.style.background='transparent';button.style.color='#e0c88a'});button.addEventListener('click',function(){if(typeof gtag==='function')gtag('event','reserve_click')});card.appendChild(button)})})();</script>
+<script src="course-reservation-links.js"></script>
+</body>
+</html>
