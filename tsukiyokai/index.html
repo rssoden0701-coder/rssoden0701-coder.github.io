@@ -1,0 +1,965 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="format-detection" content="telephone=no" />
+<title>月夜会 — TSUKIYOKAI MEMBERS — ｜ 夢月 MUTSUKI 宮古島</title>
+<meta name="description" content="宮古島 高級肉料理 夢月のメンバーズプログラム「月夜会」。夜のお仕事の、あなただけの特権。" />
+<meta name="theme-color" content="#10142B" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HFSMMRGY03"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "G-HFSMMRGY03");
+  gtag("config", "AW-18316049919");
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18316049919');
+</script>
+
+<style>
+  :root {
+    --navy: #10142B;
+    --navy-deep: #0A0D1F;
+    --navy-soft: #171C3A;
+    --gold: #C9A86A;
+    --gold-bright: #E4CB93;
+    --gold-dim: #8E7A4C;
+    --ivory: #F3EEE3;
+    --ivory-mute: #C9C4B8;
+    --line: rgba(201, 168, 106, 0.35);
+    --line-soft: rgba(201, 168, 106, 0.18);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    font-family: "Noto Serif JP", serif;
+    background: var(--navy);
+    color: var(--ivory);
+    font-weight: 300;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* 星空背景 */
+  .starfield {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(circle at 50% -10%, rgba(201,168,106,0.10), transparent 55%),
+      linear-gradient(180deg, var(--navy-deep) 0%, var(--navy) 30%, var(--navy) 70%, var(--navy-deep) 100%);
+  }
+  .stars {
+    position: absolute;
+    inset: 0;
+    background-repeat: repeat;
+    background-image:
+      radial-gradient(1px 1px at 20px 30px, rgba(243,238,227,0.8), transparent),
+      radial-gradient(1px 1px at 90px 120px, rgba(243,238,227,0.5), transparent),
+      radial-gradient(1px 1px at 160px 60px, rgba(201,168,106,0.7), transparent),
+      radial-gradient(1.5px 1.5px at 230px 180px, rgba(243,238,227,0.6), transparent),
+      radial-gradient(1px 1px at 300px 90px, rgba(243,238,227,0.4), transparent),
+      radial-gradient(1px 1px at 340px 220px, rgba(201,168,106,0.5), transparent);
+    background-size: 375px 300px;
+    opacity: 0.6;
+    animation: twinkle 6s ease-in-out infinite;
+  }
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.35; }
+    50% { opacity: 0.7; }
+  }
+
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* 共通セクション */
+  section {
+    padding: 78px 26px;
+    position: relative;
+  }
+
+  .eyebrow {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 12px;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 18px;
+    padding-left: 0.42em;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 23px;
+    letter-spacing: 0.14em;
+    text-align: center;
+    line-height: 1.75;
+    margin-bottom: 30px;
+  }
+
+  .rule {
+    width: 46px;
+    height: 1px;
+    background: var(--gold);
+    margin: 0 auto 30px;
+    position: relative;
+  }
+  .rule::before, .rule::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 3px; height: 3px;
+    background: var(--gold);
+    border-radius: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .rule::before { left: -9px; }
+  .rule::after { right: -9px; }
+
+  p.lead {
+    text-align: center;
+    font-size: 15px;
+    color: var(--ivory-mute);
+    line-height: 2.1;
+    font-weight: 300;
+  }
+
+  /* ===== ヒーロー ===== */
+  .hero {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 26px 70px;
+  }
+
+  .moon-hero {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 40px;
+    position: relative;
+    filter: drop-shadow(0 0 34px rgba(201,168,106,0.35));
+  }
+  .moon-hero svg { display: block; width: 100%; height: 100%; }
+
+  @keyframes floaty {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  .moon-hero { animation: floaty 7s ease-in-out infinite; }
+
+  .hero-jp {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.26em;
+    padding-left: 0.26em;
+    margin-bottom: 14px;
+  }
+  .hero-en {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 13px;
+    letter-spacing: 0.44em;
+    padding-left: 0.44em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 34px;
+  }
+  .hero-lead {
+    font-size: 16px;
+    color: var(--ivory);
+    font-weight: 300;
+    line-height: 2;
+    margin-bottom: 46px;
+    letter-spacing: 0.08em;
+  }
+
+  /* ボタン */
+  .btn-line {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 320px;
+    padding: 17px 24px;
+    background: linear-gradient(135deg, #D8BC7F 0%, #C9A86A 52%, #A98B4F 100%);
+    color: var(--navy-deep);
+    font-family: "Noto Serif JP", serif;
+    font-weight: 600;
+    font-size: 15.5px;
+    letter-spacing: 0.14em;
+    text-decoration: none;
+    border-radius: 2px;
+    box-shadow: 0 8px 30px rgba(201,168,106,0.28), inset 0 1px 0 rgba(255,255,255,0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn-line:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 16px rgba(201,168,106,0.3), inset 0 1px 0 rgba(255,255,255,0.35);
+  }
+  .btn-line .ico { width: 20px; height: 20px; flex: none; }
+  .btn-note {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 11px;
+    letter-spacing: 0.34em;
+    padding-left: 0.34em;
+    color: var(--gold);
+    margin-top: 18px;
+    text-transform: uppercase;
+  }
+
+  .scroll-hint {
+    margin-top: 44px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--ivory-mute);
+    opacity: 0.7;
+  }
+  .scroll-hint span {
+    display: block;
+    width: 1px; height: 34px;
+    background: linear-gradient(var(--gold), transparent);
+    margin: 12px auto 0;
+    animation: dropline 2.2s ease-in-out infinite;
+  }
+  @keyframes dropline {
+    0% { opacity: 0; transform: scaleY(0.2); transform-origin: top; }
+    40% { opacity: 1; }
+    100% { opacity: 0; transform: scaleY(1); transform-origin: top; }
+  }
+
+  /* セクション区切りの金罫 */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: center;
+    opacity: 0.8;
+  }
+  .divider::before, .divider::after {
+    content: "";
+    height: 1px;
+    width: 60px;
+    background: linear-gradient(90deg, transparent, var(--gold));
+  }
+  .divider::after { background: linear-gradient(90deg, var(--gold), transparent); }
+  .divider .dot {
+    width: 5px; height: 5px;
+    border: 1px solid var(--gold);
+    transform: rotate(45deg);
+  }
+
+  /* ===== 概要カード ===== */
+  .about-card {
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 34px 24px;
+    background: linear-gradient(180deg, rgba(23,28,58,0.6), rgba(16,20,43,0.3));
+    position: relative;
+  }
+  .about-card::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border: 1px solid var(--line-soft);
+    border-radius: 2px;
+    pointer-events: none;
+  }
+  .about-meta {
+    margin-top: 26px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line-soft);
+    display: grid;
+    gap: 12px;
+  }
+  .about-meta div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 13.5px;
+    gap: 14px;
+  }
+  .about-meta dt {
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    flex: none;
+  }
+  .about-meta dd { color: var(--ivory-mute); text-align: right; }
+
+  /* ===== ポイントの仕組み ===== */
+  .pt-headline {
+    font-size: 18px;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 0.1em;
+    margin-bottom: 34px;
+    font-weight: 400;
+  }
+  .pt-headline b { color: var(--gold-bright); font-weight: 500; }
+
+  .pt-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .pt-cell {
+    border: 1px solid var(--line-soft);
+    border-radius: 3px;
+    padding: 16px 6px 14px;
+    text-align: center;
+    background: rgba(23,28,58,0.4);
+  }
+  .pt-cell .guests {
+    font-size: 12px;
+    color: var(--ivory-mute);
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+  }
+  .pt-cell .pt {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    color: var(--gold-bright);
+    line-height: 1;
+  }
+  .pt-cell .unit {
+    font-size: 10px;
+    color: var(--gold);
+    letter-spacing: 0.14em;
+    display: block;
+    margin-top: 4px;
+  }
+
+  .pt-how {
+    text-align: center;
+    font-size: 14px;
+    color: var(--ivory);
+    line-height: 2;
+  }
+  .pt-how .qr-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 9px 18px;
+    border: 1px solid var(--line);
+    border-radius: 40px;
+    font-size: 12.5px;
+    letter-spacing: 0.1em;
+    color: var(--gold-bright);
+  }
+
+  /* ===== ランク・タイムライン ===== */
+  .timeline {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 4px;
+  }
+  .tl-track {
+    position: absolute;
+    left: 33px;
+    top: 12px;
+    bottom: 12px;
+    width: 1px;
+    background: var(--line-soft);
+  }
+  .tl-fill {
+    position: absolute;
+    left: 33px;
+    top: 12px;
+    width: 1px;
+    height: 0;
+    background: linear-gradient(var(--gold-bright), var(--gold));
+    box-shadow: 0 0 8px rgba(201,168,106,0.6);
+    transition: height 0.2s linear;
+    z-index: 1;
+  }
+
+  .tl-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 58px 1fr;
+    gap: 16px;
+    padding: 16px 0;
+    align-items: start;
+  }
+  .tl-moon {
+    width: 40px; height: 40px;
+    justify-self: center;
+    position: relative;
+    z-index: 2;
+    filter: grayscale(1) brightness(0.7);
+    opacity: 0.55;
+    transition: filter 0.6s ease, opacity 0.6s ease, transform 0.6s ease;
+  }
+  .tl-item.lit .tl-moon {
+    filter: grayscale(0) brightness(1);
+    opacity: 1;
+    transform: scale(1.06);
+  }
+  .tl-moon svg { display: block; width: 100%; height: 100%;
+    filter: drop-shadow(0 0 0 transparent);
+    transition: filter 0.6s ease; }
+  .tl-item.lit .tl-moon svg { filter: drop-shadow(0 0 12px rgba(201,168,106,0.55)); }
+
+  .tl-body { padding-top: 1px; }
+  .tl-phase {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+  }
+  .tl-name {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--ivory);
+  }
+  .tl-item.lit .tl-name { color: var(--gold-bright); }
+  .tl-pt {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    padding: 1px 10px;
+  }
+  .tl-desc {
+    font-size: 13.5px;
+    color: var(--ivory-mute);
+    line-height: 1.95;
+    font-weight: 300;
+  }
+  .tl-item.zenith .tl-name {
+    background: linear-gradient(90deg, var(--gold-bright), var(--gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* ===== 登録方法 ===== */
+  .join-steps {
+    display: grid;
+    gap: 14px;
+    margin: 8px 0 34px;
+  }
+  .join-step {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 14px;
+    align-items: baseline;
+    font-size: 14px;
+    color: var(--ivory-mute);
+    line-height: 1.9;
+  }
+  .join-step .n {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 15px;
+    color: var(--gold);
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    width: 28px; height: 28px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .join-step b { color: var(--ivory); font-weight: 400; }
+
+  .qr-box {
+    text-align: center;
+    margin-top: 8px;
+  }
+  .qr-frame {
+    display: inline-block;
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: rgba(243,238,227,0.04);
+    position: relative;
+  }
+  .qr-frame img {
+    display: block;
+    width: 168px; height: 168px;
+    object-fit: cover;
+    background: #fff;
+    border-radius: 2px;
+  }
+  .qr-frame .placeholder {
+    width: 168px; height: 168px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ivory-mute);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    border: 1px dashed var(--line-soft);
+    border-radius: 2px;
+  }
+  .qr-cap {
+    font-size: 12px;
+    color: var(--ivory-mute);
+    letter-spacing: 0.1em;
+    margin-top: 14px;
+  }
+
+  .center-btn { text-align: center; margin-top: 30px; }
+
+  /* ===== FAQ ===== */
+  .faq details {
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .faq details:first-of-type { border-top: 1px solid var(--line-soft); }
+  .faq summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 20px 34px 20px 26px;
+    position: relative;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    color: var(--ivory);
+    font-weight: 400;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary .q {
+    font-family: "Cormorant Garamond", serif;
+    color: var(--gold);
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  .faq summary::after {
+    content: "＋";
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: var(--gold);
+    font-size: 15px;
+    transition: transform 0.3s ease;
+  }
+  .faq details[open] summary::after { content: "－"; }
+  .faq .a {
+    padding: 0 26px 22px 46px;
+    font-size: 13.5px;
+    color: var(--ivory-mute);
+    line-height: 2;
+    font-weight: 300;
+  }
+
+  /* ===== フッター ===== */
+  footer {
+    text-align: center;
+    padding: 60px 26px 70px;
+    border-top: 1px solid var(--line-soft);
+    background: var(--navy-deep);
+    position: relative;
+    z-index: 1;
+  }
+  .f-moon { width: 34px; height: 34px; margin: 0 auto 22px; opacity: 0.8; }
+  .f-name {
+    font-size: 22px;
+    letter-spacing: 0.3em;
+    padding-left: 0.3em;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .f-en {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 12px;
+    letter-spacing: 0.42em;
+    padding-left: 0.42em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .f-tag {
+    font-size: 12.5px;
+    letter-spacing: 0.16em;
+    color: var(--ivory-mute);
+    margin-bottom: 16px;
+  }
+  .f-info {
+    font-size: 12.5px;
+    color: var(--ivory-mute);
+    letter-spacing: 0.08em;
+    line-height: 2;
+  }
+  .f-invite {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    padding-left: 0.4em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-top: 26px;
+  }
+
+  /* スクロール演出 */
+  .reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity 1s ease, transform 1s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .reveal.in { opacity: 1; transform: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .moon-hero, .stars, .scroll-hint span { animation: none; }
+  }
+</style>
+
+<div class="starfield" aria-hidden="true"><div class="stars"></div></div>
+
+<div class="wrap">
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="moon-hero" aria-hidden="true">
+      <svg viewBox="0 0 120 120">
+        <defs>
+          <radialGradient id="cg" cx="38%" cy="35%" r="75%">
+            <stop offset="0%" stop-color="#F6ECCF"/>
+            <stop offset="55%" stop-color="#D8BC7F"/>
+            <stop offset="100%" stop-color="#B7975A"/>
+          </radialGradient>
+          <filter id="soft"><feGaussianBlur stdDeviation="0.4"/></filter>
+        </defs>
+        <circle cx="60" cy="60" r="46" fill="none" stroke="rgba(201,168,106,0.25)" stroke-width="1"/>
+        <path d="M78 18 A46 46 0 1 0 78 102 A38 38 0 1 1 78 18 Z" fill="url(#cg)" filter="url(#soft)"/>
+        <circle cx="48" cy="42" r="4" fill="rgba(120,96,52,0.28)"/>
+        <circle cx="40" cy="66" r="6" fill="rgba(120,96,52,0.22)"/>
+        <circle cx="58" cy="78" r="3" fill="rgba(120,96,52,0.25)"/>
+      </svg>
+    </div>
+
+    <h1 class="hero-jp">月夜会</h1>
+    <div class="hero-en">Tsukiyokai Members</div>
+    <p class="hero-lead">夜のお仕事の、<br />あなただけの特権。</p>
+
+    <a class="btn-line" href="https://u.lin.ee/ZAurarB" target="_blank" rel="noopener">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 3C6.9 3 2.75 6.36 2.75 10.5c0 3.7 3.3 6.8 7.77 7.4.3.06.71.2.82.46.09.24.06.6.03.85l-.13.8c-.04.24-.19.94.82.51 1.02-.43 5.48-3.23 7.48-5.53 1.38-1.52 2.05-3.06 2.05-4.99C21.6 6.36 17.45 3 12 3Z" fill="#10142B"/>
+      </svg>
+      LINEで登録する
+    </a>
+    <div class="btn-note">Invitation Only</div>
+
+    <div class="scroll-hint" aria-hidden="true">Scroll<span></span></div>
+  </header>
+
+  <!-- ===== 月夜会とは ===== -->
+  <section>
+    <div class="eyebrow reveal">About</div>
+    <div class="rule reveal"></div>
+    <h2 class="reveal">月夜会とは</h2>
+    <div class="about-card reveal">
+      <p class="lead">
+        夢月の、<br />あなたのためのメンバーズプログラム。<br />
+        お客様との同伴でポイントが満ちて、<br />月のように特典が育ちます。
+      </p>
+      <dl class="about-meta">
+        <div><dt>OPEN</dt><dd>17:00 〜 23:00</dd></div>
+        <div><dt>RESERVE</dt><dd>完全予約制</dd></div>
+        <div><dt>DOUHAN</dt><dd>同伴予約はLINEで</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="divider reveal"><span class="dot"></span></div>
+
+  <!-- ===== ポイントの仕組み ===== -->
+  <section>
+    <div class="eyebrow reveal">Point System</div>
+    <div class="rule reveal"></div>
+    <h2 class="reveal">ポイントの仕組み</h2>
+    <p class="pt-headline reveal">お客様お一人のご招待で、<br /><b>2ポイント</b>。</p>
+
+    <div class="pt-grid reveal">
+      <div class="pt-cell"><div class="guests">1名</div><div class="pt">2<span class="unit">pt</span></div></div>
+      <div class="pt-cell"><div class="guests">2名</div><div class="pt">4<span class="unit">pt</span></div></div>
+      <div class="pt-cell"><div class="guests">3名</div><div class="pt">6<span class="unit">pt</span></div></div>
+      <div class="pt-cell"><div class="guests">4名</div><div class="pt">8<span class="unit">pt</span></div></div>
+    </div>
+
+    <p class="pt-how reveal">
+      お会計時に、<br />QRを1回スキャンするだけ。
+      <span class="qr-chip">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 3h7v7H3V3Zm2 2v3h3V5H5Zm9-2h7v7h-7V3Zm2 2v3h3V5h-3ZM3 14h7v7H3v-7Zm2 2v3h3v-3H5Zm11-2h5v2h-3v3h-2v-5Zm3 5h2v2h-2v-2Z" fill="#E4CB93"/>
+        </svg>
+        たったこれだけ
+      </span>
+    </p>
+  </section>
+
+  <div class="divider reveal"><span class="dot"></span></div>
+
+  <!-- ===== ランクと特典 ===== -->
+  <section>
+    <div class="eyebrow reveal">Rank &amp; Privilege</div>
+    <div class="rule reveal"></div>
+    <h2 class="reveal">月が満ちるほど、<br />特典は育つ。</h2>
+
+    <div class="timeline" id="timeline">
+      <div class="tl-track"></div>
+      <div class="tl-fill" id="tlFill"></div>
+
+      <div class="tl-item" data-moon="new">
+        <div class="tl-moon"></div>
+        <div class="tl-body">
+          <div class="tl-phase"><span class="tl-name">新月</span><span class="tl-pt">登録時</span></div>
+          <p class="tl-desc">月夜会メンバー証を発行。同伴予約をLINEで優先受付いたします。</p>
+        </div>
+      </div>
+
+      <div class="tl-item" data-moon="crescent">
+        <div class="tl-moon"></div>
+        <div class="tl-body">
+          <div class="tl-phase"><span class="tl-name">三日月</span><span class="tl-pt">6 pt</span></div>
+          <p class="tl-desc">同伴時、乾杯のスパークリングをご来店の人数分サービス。</p>
+        </div>
+      </div>
+
+      <div class="tl-item" data-moon="half">
+        <div class="tl-moon"></div>
+        <div class="tl-body">
+          <div class="tl-phase"><span class="tl-name">半月</span><span class="tl-pt">10 pt</span></div>
+          <p class="tl-desc">お好きなコースを1名分プレゼント。お友達との別の機会のご利用もどうぞ。</p>
+        </div>
+      </div>
+
+      <div class="tl-item" data-moon="gibbous">
+        <div class="tl-moon"></div>
+        <div class="tl-body">
+          <div class="tl-phase"><span class="tl-name">十三夜</span><span class="tl-pt">20 pt</span></div>
+          <p class="tl-desc">ご指名来店（逆同伴）— 夢月が、あなたのお店へ1時間お伺いします。</p>
+        </div>
+      </div>
+
+      <div class="tl-item" data-moon="full">
+        <div class="tl-moon"></div>
+        <div class="tl-body">
+          <div class="tl-phase"><span class="tl-name">満月</span><span class="tl-pt">30 pt</span></div>
+          <p class="tl-desc">ご指名来店（逆同伴）の際に、シャンパンを1本お入れします。<br /><small style="opacity:0.65; font-size:12px; letter-spacing:0.08em;">（5万円相当）</small></p>
+        </div>
+      </div>
+
+      <div class="tl-item zenith" data-moon="beyond">
+        <div class="tl-moon"></div>
+        <div class="tl-body">
+          <div class="tl-phase"><span class="tl-name">夢月</span><span class="tl-pt">100 pt</span></div>
+          <p class="tl-desc">VIPメンバー就任。ご来店・同伴は、常時VIP対応でお迎えします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider reveal"><span class="dot"></span></div>
+
+  <!-- ===== 登録方法 ===== -->
+  <section>
+    <div class="eyebrow reveal">How to Join</div>
+    <div class="rule reveal"></div>
+    <h2 class="reveal">ご登録の流れ</h2>
+
+    <p class="lead reveal" style="margin-bottom:28px;">
+      ご登録は、その場ですぐに。
+    </p>
+
+    <div class="join-steps reveal">
+      <div class="join-step"><span class="n">1</span><span>店頭、またはこのページから<b>友だち追加</b>。</span></div>
+      <div class="join-step"><span class="n">2</span><span>その場で<b>会員証を発行</b>いたします。</span></div>
+      <div class="join-step"><span class="n">3</span><span>あとは同伴のたびに、<b>ポイントが満ちて</b>いきます。</span></div>
+    </div>
+
+    <div class="qr-box reveal">
+      <div class="qr-frame">
+        <img src="../assets/QR_403222_48cf5057.png" alt="月夜会 LINE友だち追加QRコード" />
+      </div>
+      <div class="qr-cap">LINEでQRを読み取ってください</div>
+    </div>
+
+    <div class="center-btn reveal">
+      <a class="btn-line" href="https://u.lin.ee/ZAurarB" target="_blank" rel="noopener">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3C6.9 3 2.75 6.36 2.75 10.5c0 3.7 3.3 6.8 7.77 7.4.3.06.71.2.82.46.09.24.06.6.03.85l-.13.8c-.04.24-.19.94.82.51 1.02-.43 5.48-3.23 7.48-5.53 1.38-1.52 2.05-3.06 2.05-4.99C21.6 6.36 17.45 3 12 3Z" fill="#10142B"/>
+        </svg>
+        LINEで登録する
+      </a>
+    </div>
+  </section>
+
+  <div class="divider reveal"><span class="dot"></span></div>
+
+  <!-- ===== FAQ ===== -->
+  <section>
+    <div class="eyebrow reveal">Questions</div>
+    <div class="rule reveal"></div>
+    <h2 class="reveal">よくあるご質問</h2>
+
+    <div class="faq reveal">
+      <details>
+        <summary><span class="q">Q.</span>お店にバレない？</summary>
+        <div class="a">会員情報は、夢月のみで大切に管理いたします。外部に共有することは一切ございません。</div>
+      </details>
+      <details>
+        <summary><span class="q">Q.</span>ポイントの期限は？</summary>
+        <div class="a">最終ご利用日から1年間、有効です。ご来店いただくたびに、期限は更新されます。</div>
+      </details>
+      <details>
+        <summary><span class="q">Q.</span>特典の使い方は？</summary>
+        <div class="a">LINEの会員証画面を、ご来店時にスタッフへご提示ください。その場で特典を承ります。</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== フッター ===== -->
+  <footer>
+    <div class="f-moon" aria-hidden="true">
+      <svg viewBox="0 0 40 40">
+        <path d="M26 6 A16 16 0 1 0 26 34 A13 13 0 1 1 26 6 Z" fill="#C9A86A"/>
+      </svg>
+    </div>
+    <div class="f-name">夢月</div>
+    <div class="f-en">Mutsuki</div>
+    <div class="f-tag">宮古島 高級肉料理</div>
+    <div class="f-info">
+      17:00 〜 23:00 ／ 完全予約制<br />
+      同伴・ご予約はLINEにて承ります
+    </div>
+    <div class="f-invite">Invitation Only</div>
+  </footer>
+
+</div>
+
+<script>
+  // 月の満ち欠けSVGを生成（0=新月 → 1=満月・右側から満ちる waxing）
+  function moonSVG(phase, uid) {
+    var r = 18, cx = 20, cy = 20;
+    var top = cy - r, bot = cy + r;
+    var craters =
+      '<circle cx="15" cy="14" r="2.2" fill="rgba(120,96,52,0.30)"/>' +
+      '<circle cx="13" cy="25" r="3" fill="rgba(120,96,52,0.24)"/>' +
+      '<circle cx="24" cy="27" r="1.6" fill="rgba(120,96,52,0.26)"/>';
+
+    var lit;
+    if (phase <= 0.001) {
+      lit = ''; // 新月：光なし
+    } else if (phase >= 0.999) {
+      lit = '<circle cx="20" cy="20" r="18" fill="#D8BC7F"/>';
+    } else {
+      var rx = r * Math.abs(1 - 2 * phase);       // ターミネーターの横半径
+      var innerSweep = phase < 0.5 ? 0 : 1;        // 三日月＝右寄り／十三夜＝左寄り
+      var d = 'M 20 ' + top +
+              ' A ' + r + ' ' + r + ' 0 0 1 20 ' + bot +          // 右の外周（点灯側）
+              ' A ' + rx + ' ' + r + ' 0 0 ' + innerSweep + ' 20 ' + top + ' Z';
+      lit = '<path d="' + d + '" fill="#D8BC7F"/>';
+    }
+
+    // クレーターは光っている面だけに（clipで切り抜き）
+    var clip = '';
+    if (lit && phase > 0.4) {
+      clip = '<clipPath id="lc' + uid + '">' +
+             (phase >= 0.999
+               ? '<circle cx="20" cy="20" r="18"/>'
+               : '<path d="M 20 ' + top + ' A ' + r + ' ' + r + ' 0 0 1 20 ' + bot +
+                 ' A ' + (r * Math.abs(1 - 2 * phase)) + ' ' + r + ' 0 0 ' +
+                 (phase < 0.5 ? 0 : 1) + ' 20 ' + top + ' Z"/>') +
+             '</clipPath>' +
+             '<g clip-path="url(#lc' + uid + ')">' + craters + '</g>';
+    }
+
+    return '<svg viewBox="0 0 40 40">' +
+      '<circle cx="20" cy="20" r="18.6" fill="none" stroke="rgba(201,168,106,0.35)" stroke-width="0.8"/>' +
+      '<circle cx="20" cy="20" r="18" fill="#0A0D1F"/>' +
+      lit + clip + '</svg>';
+  }
+
+  var phaseMap = {
+    "new": 0.06,
+    "crescent": 0.24,
+    "half": 0.5,
+    "gibbous": 0.72,
+    "full": 1,
+    "beyond": 1
+  };
+
+  document.querySelectorAll('.tl-item').forEach(function (item, i) {
+    var key = item.getAttribute('data-moon');
+    var holder = item.querySelector('.tl-moon');
+    holder.innerHTML = moonSVG(phaseMap[key], i);
+    if (key === 'beyond') {
+      // 夢月：満月＋光輪
+      var svg = holder.querySelector('svg');
+      if (svg) {
+        var glow = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        glow.setAttribute('cx', '20'); glow.setAttribute('cy', '20');
+        glow.setAttribute('r', '19.4');
+        glow.setAttribute('fill', 'none');
+        glow.setAttribute('stroke', '#E4CB93');
+        glow.setAttribute('stroke-width', '0.6');
+        svg.appendChild(glow);
+      }
+    }
+  });
+
+  // フェードイン
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.16, rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+
+  // タイムライン：月が満ちていく演出
+  var timeline = document.getElementById('timeline');
+  var tlFill = document.getElementById('tlFill');
+  var items = Array.prototype.slice.call(document.querySelectorAll('.tl-item'));
+
+  function onScroll() {
+    if (!timeline) return;
+    var rect = timeline.getBoundingClientRect();
+    var vh = window.innerHeight;
+    var trigger = vh * 0.62; // この線を越えたランクが点灯
+    var total = rect.height - 24;
+    // 進捗＝トリガー線がタイムライン上部からどれだけ下がったか
+    var progress = (trigger - (rect.top + 12)) ;
+    progress = Math.max(0, Math.min(total, progress));
+    tlFill.style.height = progress + 'px';
+
+    items.forEach(function (item) {
+      var moon = item.querySelector('.tl-moon');
+      var mRect = moon.getBoundingClientRect();
+      if (mRect.top + mRect.height / 2 < trigger) {
+        item.classList.add('lit');
+      } else {
+        item.classList.remove('lit');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  onScroll();
+</script>
