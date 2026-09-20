@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>同伴ナイト 7.24-7.25｜夢月 MUTSUKI 宮古島</title>
+<meta name="description" content="7月24日（金）・25日（土）二夜限りの同伴ナイト。お二人それぞれコース¥5,000引き、ワイン・シャンパン全ボトル半額。宮古島の高級肉料理 夢月 MUTSUKI。">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="同伴ナイト｜ふたりで、¥10,000引き。7.24 FRI / 7.25 SAT">
+<meta property="og:description" content="コースお一人様ずつ¥5,000引き＋ワイン・シャンパン全ボトル半額。二夜限りのご招待。夢月 MUTSUKI 宮古島">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#0a1020;        /* 夜の紺 */
+  --paper2:#101a30;
+  --wine:#e0c894;         /* 金（明） */
+  --wine2:#c9a76a;        /* 金 */
+  --rose:#c9a76a;
+  --gold:#c9a76a;
+  --gold-l:#e0c894;
+  --ink:#e6e0d2;
+  --muted:#9aa3b5;
+  --serif:'Shippori Mincho',serif;
+  --latin:'Cormorant Garamond',serif;
+  --num:'Montserrat',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.9;letter-spacing:.06em;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:640px;margin:0 auto;padding:0 22px}
+section{padding:68px 0}
+.en{font-family:var(--latin);letter-spacing:.3em}
+
+/* ===== hero ===== */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:80px 22px 60px;background:
+  radial-gradient(ellipse at 50% -20%, #1c2a4a 0%, var(--paper) 60%),
+  var(--paper);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:14px;border:1px solid rgba(168,129,79,.4);pointer-events:none}
+.hero::after{content:"";position:absolute;inset:20px;border:1px solid rgba(168,129,79,.2);pointer-events:none}
+.logo-img{width:200px;height:200px;object-fit:cover;border-radius:8px;margin:0 auto 30px;display:block;box-shadow:0 0 44px rgba(224,200,148,.18);border:1px solid rgba(201,167,106,.35)}
+.moon-line{width:86px;height:86px;border-radius:50%;margin:0 auto 30px;position:relative;border:1px solid var(--gold);}
+.moon-line::before{content:"";position:absolute;inset:8px;border-radius:50%;background:radial-gradient(circle at 30% 40%, transparent 0 55%, rgba(183,110,121,.55) 56%)}
+.hero .brand-en{font-size:12.5px;color:var(--gold);margin-bottom:10px}
+.hero .brand-ja{font-size:15px;color:var(--muted);letter-spacing:.3em;margin-bottom:34px}
+.hero .ev-en{font-size:13px;color:var(--rose);margin-bottom:12px}
+.hero h1{font-size:clamp(34px,9vw,48px);font-weight:600;color:var(--wine);letter-spacing:.18em;line-height:1.4;margin-bottom:10px}
+.hero .dates{font-family:var(--num);font-size:clamp(15px,4.2vw,20px);font-weight:500;color:var(--gold);letter-spacing:.18em;margin-bottom:34px}
+.hero .dates b{font-weight:600;color:var(--wine2)}
+.big-offer{margin:0 0 8px}
+.big-offer .pre{display:block;font-size:15.5px;color:var(--ink);margin-bottom:6px}
+.big-offer .num{font-family:var(--num);font-size:clamp(30px,9.6vw,60px);font-weight:600;color:var(--ink);line-height:1.35;letter-spacing:.01em;text-shadow:0 0 30px rgba(224,200,148,.15)}
+.big-offer .num .line{display:block;white-space:nowrap}
+.big-offer .num em{font-style:normal;color:var(--gold-l)}
+.big-offer .tail{font-size:clamp(18px,5vw,24px);color:var(--wine);font-weight:600}
+.sub-offer{font-size:16px;color:var(--ink);margin:20px 0 34px;line-height:2.1}
+.sub-offer b{color:var(--wine2)}
+.badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:38px}
+.badge{border:1px solid rgba(201,167,106,.5);color:var(--gold-l);font-size:13px;padding:8px 18px;border-radius:999px;letter-spacing:.14em;background:transparent}
+.cta{display:inline-block;background:linear-gradient(135deg,#d8bd85,#b8945a);color:#0a1020;font-weight:600;font-size:15px;letter-spacing:.18em;padding:18px 44px;border-radius:2px;box-shadow:0 6px 26px rgba(201,167,106,.35);transition:.3s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(201,167,106,.5)}
+.cta.ghost{background:transparent;color:var(--gold-l);border:1px solid var(--gold);box-shadow:none;font-weight:500}
+.cta-row{display:flex;flex-direction:column;gap:14px;align-items:center}
+.hero .note-s{font-size:13px;color:var(--muted);margin-top:18px}
+.link-u{color:var(--wine2);text-decoration:underline;text-underline-offset:4px}
+
+/* ===== section head ===== */
+.sec-head{text-align:center;margin-bottom:42px}
+.sec-head .en-s{font-size:11px;color:var(--rose);display:block;margin-bottom:10px;font-family:var(--latin);letter-spacing:.3em}
+.sec-head h2{font-size:clamp(19px,5.4vw,24px);font-weight:600;color:var(--wine);letter-spacing:.14em}
+.sec-head .rule{width:36px;height:1px;background:var(--gold);margin:20px auto 0}
+
+/* ===== 特典 ===== */
+.benefit{background:var(--paper2)}
+.b-card{background:#0d1526;border:1px solid rgba(201,167,106,.35);border-radius:4px;padding:30px 26px;margin-bottom:18px;text-align:center;position:relative}
+.b-card .b-no{font-family:var(--latin);font-size:12px;color:var(--rose);letter-spacing:.3em;display:block;margin-bottom:10px}
+.b-card h3{font-size:20px;color:var(--wine);font-weight:600;letter-spacing:.1em;margin-bottom:10px}
+.b-card p{font-size:15px;color:var(--ink)}
+.b-card p b{color:var(--wine2)}
+.pair-note{text-align:center;font-size:15px;color:var(--wine2);margin-top:22px;line-height:2.2}
+
+/* ===== 対象コース ===== */
+.course-t{width:100%;border-collapse:collapse;margin-top:6px}
+.course-t th,.course-t td{padding:18px 6px;border-bottom:1px solid rgba(168,129,79,.3);text-align:left;font-size:16px}
+.course-t th{font-weight:600;color:var(--wine);letter-spacing:.1em}
+.course-t .phase{font-family:var(--latin);font-size:12px;color:var(--rose);display:block;letter-spacing:.24em;margin-bottom:2px}
+.course-t .was{color:var(--muted);text-decoration:line-through;font-size:13px;display:block;font-family:var(--num)}
+.course-t .now{color:var(--wine);font-weight:700;font-size:19px;font-family:var(--num);letter-spacing:.02em;white-space:nowrap}
+.course-t .now small{font-family:var(--serif);font-size:12px;font-weight:400;color:var(--muted)}
+.course-note{font-size:13px;color:var(--muted);margin-top:14px;line-height:2}
+.ph{width:100%;border-radius:4px;display:block;object-fit:cover;aspect-ratio:16/9;border:1px solid rgba(168,129,79,.3);margin-bottom:28px}
+
+/* ===== 条件 ===== */
+.cond{background:var(--paper2)}
+.cond-list{border-top:1px solid rgba(168,129,79,.3)}
+.cond-row{display:flex;border-bottom:1px solid rgba(168,129,79,.3);padding:17px 4px;gap:16px}
+.cond-row dt{flex:0 0 96px;color:var(--wine2);font-size:14.5px;letter-spacing:.1em;padding-top:2px;font-weight:600}
+.cond-row dd{flex:1;font-size:15px;color:var(--ink)}
+.cond-row dd small{display:block;color:var(--muted);font-size:13px;margin-top:5px}
+
+/* ===== 安心 ===== */
+.ease .item{display:flex;gap:16px;margin-bottom:26px;align-items:flex-start}
+.ease .ico{flex:0 0 40px;height:40px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:16px}
+.ease h3{font-size:17px;color:var(--wine);font-weight:600;margin-bottom:6px;letter-spacing:.1em}
+.ease p{font-size:14.5px;color:var(--ink)}
+
+/* ===== アクセス ===== */
+.map-wrap iframe{width:100%;height:320px;border:1px solid rgba(201,167,106,.35);border-radius:4px;display:block}
+.access .addr{text-align:center;font-size:14.5px;color:var(--ink);margin-top:18px}
+/* ===== 予約 ===== */
+.reserve{background:linear-gradient(180deg,var(--paper2),#0c1322);text-align:center}
+.reserve .lead{font-size:15.5px;margin-bottom:30px;color:var(--ink)}
+.tel{font-family:var(--num);font-size:22px;font-weight:500;color:var(--wine);letter-spacing:.06em;display:block;margin-top:22px}
+.reserve .foot-note{font-size:12.5px;color:var(--muted);margin-top:26px;line-height:2.1;text-align:left}
+/* ===== 月夜会 ===== */
+.tsukiyokai-box{background:#0d1526;border:1px solid rgba(201,167,106,.35);border-radius:4px;padding:32px 26px;text-align:center}
+.tsukiyokai-box h3{font-size:19px;color:var(--wine);font-weight:600;letter-spacing:.12em;margin-bottom:14px}
+.tsukiyokai-box p{font-size:14.5px;color:var(--ink);text-align:left;margin-bottom:1.4em}
+.tsukiyokai-box p b{color:var(--wine2)}
+.tsukiyokai-box .small{font-size:13px;color:var(--muted);text-align:center;margin:14px 0 0}
+
+/* ===== footer ===== */
+footer{background:#060b16;color:var(--gold-l);text-align:center;padding:44px 22px;font-size:13px;letter-spacing:.12em}
+footer .f-logo{width:150px;height:150px;object-fit:cover;border-radius:6px;margin:0 auto 22px;display:block;border:1px solid rgba(201,167,106,.3)}
+footer p{color:#9aa3b5;font-size:12px}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HFSMMRGY03"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HFSMMRGY03');
+  gtag('config', 'AW-18316049919');
+</script>
+<link rel="canonical" href="https://mutsuki-miyakojima.com/douhan/index.html" /></head>
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <img class="logo-img" src="../assets/douhan_logo_a665d73d.png" alt="大人の隠れ家 高級肉料理専門店 夢月 MUTSUKI 宮古島"
+       onerror="this.style.display='none';document.getElementById('brandfb').style.display='block'">
+  <div id="brandfb" style="display:none">
+    <div class="moon-line"></div>
+    <div class="en brand-en">MUTSUKI MIYAKOJIMA</div>
+    <div class="brand-ja">高級肉料理専門店 夢月</div>
+  </div>
+
+  <div class="en ev-en">TWO NIGHTS ONLY</div>
+  <h1>同伴ナイト</h1>
+  <div class="dates en"><b>7.24</b> FRI &nbsp;/&nbsp; <b>7.25</b> SAT</div>
+
+  <div class="big-offer">
+    <span class="pre">おふたりのコース、それぞれ ¥5,000引き。</span>
+    <div class="num"><span class="line">ふたりで、</span><span class="line"><em>¥10,000</em>引き。</span></div>
+  </div>
+  <p class="sub-offer">さらに——<b style="white-space:nowrap">ワイン・シャンパン</b> <b style="white-space:nowrap">全ボトル半額</b></p>
+
+  <div class="badges">
+    <span class="badge">二夜限定</span>
+    <span class="badge">17:00〜21:00 ご入店</span>
+    <span class="badge">個室あり</span>
+  </div>
+
+  <div class="cta-row">
+    <a class="cta" href="https://line.me/R/oaMessage/%40931bofos/?text=%E5%90%8C%E4%BC%B4%E3%83%8A%E3%82%A4%E3%83%88%E4%BA%88%E7%B4%84%F0%9F%8C%99%0A%E2%91%A0%E6%97%A5%E4%BB%98%EF%BC%8824%E6%97%A5+or+25%E6%97%A5%EF%BC%89%EF%BC%9A%0A%E2%91%A1%E3%81%94%E5%85%A5%E5%BA%97%E6%99%82%E9%96%93%EF%BC%9A%0A%E2%91%A2%E4%BA%BA%E6%95%B0%EF%BC%9A%0A%E2%91%A3%E3%82%B3%E3%83%BC%E3%82%B9%EF%BC%88%E3%81%8A%E8%82%891%E7%A8%AE%C2%A58%2C200%EF%BC%8F2%E7%A8%AE%E9%A3%9F%E3%81%B9%E6%AF%94%E3%81%B9%C2%A511%2C500%EF%BC%8F3%E7%A8%AE%E3%81%9C%E3%82%93%E3%81%B6%C2%A517%2C000%EF%BC%89%EF%BC%9A%0A%E2%91%A4%E3%81%94%E5%8B%A4%E5%8B%99%E5%85%88%E3%81%AE%E3%81%8A%E5%BA%97%EF%BC%9A">LINEで予約する</a>
+    <a class="cta ghost" href="tel:09082922774">📞 090-8292-2774</a>
+  </div>
+  <p class="note-s">タップするとLINEが開きます。テンプレを埋めて送るだけでご予約完了🌙</p>
+</header>
+
+<!-- ================= 特典 ================= -->
+<section class="benefit">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-s">BENEFITS</span>
+      <h2>二夜限りの、ふたつの特典</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="b-card">
+      <span class="b-no">BENEFIT 01</span>
+      <h3>コース お一人様ずつ ¥5,000引き</h3>
+      <p>ご同伴のおふたり、<b>どちらのコースも¥5,000引き</b>。<br>対象は「三日月」以上の全コースです。</p>
+    </div>
+
+    <div class="b-card">
+      <span class="b-no">BENEFIT 02</span>
+      <h3>ワイン・シャンパン 全ボトル半額</h3>
+      <p>セラーの<b>全ボトルが半額</b>。<br>乾杯の一本も、特別な一本も、この二夜だけの月光価格で。</p>
+    </div>
+
+    <p class="pair-note">「今週だけ、ふたりで一万円引きなの」——<br>そのままお誘いの言葉にお使いください。</p>
+  </div>
+</section>
+
+<!-- ================= 月夜会 ================= -->
+<section class="tsukiyokai">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-s">MEMBERSHIP</span>
+      <h2>「月夜会」のご案内</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="tsukiyokai-box">
+      <h3>夜のお仕事の方のための、会員制度です。</h3>
+      <p>「月夜会（つきよかい）」は、宮古島のナイトワークにお勤めの方だけがご登録いただける、夢月のLINE会員制度。<b>登録は無料</b>です。</p>
+      <p>本企画は、<b>月夜会の会員画面のご提示</b>が対象の証明になります。まだご登録がお済みでない方も、<b>当日のご登録でご参加いただけます</b>。</p>
+      <p>ご登録いただくと、同伴・アフターの優待や、会員だけの先行のご案内をLINEでお届けします。</p>
+      <div class="cta-row" style="margin-top:24px">
+        <a class="cta ghost" href="https://mutsuki-miyakojima.com/tsukiyokai" target="_blank" rel="noopener">月夜会について詳しく →</a>
+      </div>
+      <p class="small">ご登録・詳細は上のボタンからご覧いただけます</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 対象コース ================= -->
+<section class="courses">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-s">COURSES</span>
+      <h2>対象コース（お一人様・税込）</h2>
+      <div class="rule"></div>
+    </div>
+
+    <img class="ph" src="../assets/douhan_steak_0988ca6d.jpg" alt="石のプレートで仕上げる鉄板コース">
+
+    <table class="course-t">
+      <tr>
+        <th><span class="phase">— 三日月 —</span>お肉1種の鉄板コース<br><small style="color:var(--muted);font-size:12.5px">馬肉・あか牛・地鶏から1種を選択</small></th>
+        <td style="text-align:right"><span class="was">¥13,200</span><span class="now">¥8,200<small>／人</small></span></td>
+      </tr>
+      <tr>
+        <th><span class="phase">— 上弦の月 —</span>2種食べ比べコース<br><small style="color:var(--muted);font-size:12.5px">馬×鶏／牛×鶏／牛×馬 から選択</small></th>
+        <td style="text-align:right"><span class="was">¥16,500</span><span class="now">¥11,500<small>／人</small></span></td>
+      </tr>
+      <tr>
+        <th><span class="phase">— 十三夜月 —</span>馬・牛・鶏 3種ぜんぶ<br><small style="color:var(--muted);font-size:12.5px">いちばん贅沢な最上位コース</small></th>
+        <td style="text-align:right"><span class="was">¥22,000</span><span class="now">¥17,000<small>／人</small></span></td>
+      </tr>
+    </table>
+    <p class="course-note">※ 全コース：食前酒・前菜・お造り・天草地鶏スープ・メイン鉄板・俵おにぎり・シークレット・季節の果実・デザート付き。<br>※ 新月コース（¥8,800）は本企画の対象外です。</p>
+  </div>
+</section>
+
+<!-- ================= 出勤前でも安心 ================= -->
+<section class="ease">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-s">FOR YOU</span>
+      <h2>ご出勤前でも、安心して。</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="item">
+      <div class="ico">⏱</div>
+      <div>
+        <h3>お時間に合わせて進行します</h3>
+        <p>「◯時に出ます」とお伝えください。ご出勤に間に合うよう、コースの進行を調整いたします。</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="ico">🚪</div>
+      <div>
+        <h3>個室のご用意</h3>
+        <p>4名様個室×2室。ゆっくり話せる、ふたりの時間に。</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="ico">🌙</div>
+      <div>
+        <h3>アフターは朝4時まで</h3>
+        <p>お仕事終わりのアフターも、22時から翌4時までアラカルトでお待ちしています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ご利用条件 ================= -->
+<section class="cond">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-s">INFORMATION</span>
+      <h2>ご利用条件</h2>
+      <div class="rule"></div>
+    </div>
+
+    <dl class="cond-list">
+      <div class="cond-row"><dt>開催日</dt><dd>2026年7月24日（金）・25日（土）の二夜限り</dd></div>
+      <div class="cond-row"><dt>ご入店</dt><dd>17:00〜21:00<small>ご出勤時間に合わせてコース進行を調整します</small></dd></div>
+      <div class="cond-row"><dt>対象</dt><dd>ナイトワークにお勤めの方と、ご同伴のお客様<small><a class="link-u" href="https://mutsuki-miyakojima.com/tsukiyokai" target="_blank" rel="noopener">月夜会LINE</a>の会員画面をご提示ください（当日のご登録もOK）</small></dd></div>
+      <div class="cond-row"><dt>特典</dt><dd>三日月以上のコースが お一人様ずつ¥5,000引き／ワイン・シャンパン全ボトル半額</dd></div>
+      <div class="cond-row"><dt>ご予約</dt><dd>月夜会LINE、またはお電話にて<small>当日のご予約も歓迎です。LINEは下のボタンからどうぞ</small></dd></div>
+      <div class="cond-row"><dt>ご注意</dt><dd>島民モニター企画など他の割引との併用はできません<small>ボトル半額は一部の希少ボトルを除きます</small></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ================= アクセス ================= -->
+<section class="access">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-s">ACCESS</span>
+      <h2>アクセス</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="map-wrap">
+      <iframe src="https://maps.google.com/maps?q=%E5%A4%A2%E6%9C%88%20MUTSUKI%20%E5%AE%AE%E5%8F%A4%E5%B3%B6%20%E5%B9%B3%E8%89%AF%E4%B8%8B%E9%87%8C&z=17&ie=UTF8&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="夢月 MUTSUKI 地図"></iframe>
+    </div>
+    <p class="addr">〒906-0013 沖縄県宮古島市平良下里65-2 FC-1ビル 1F</p>
+    <div class="cta-row" style="margin-top:20px">
+      <a class="cta ghost" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A2%E6%9C%88%20MUTSUKI%20%E5%AE%AE%E5%8F%A4%E5%B3%B6" target="_blank" rel="noopener">Googleマップで開く →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 予約 ================= -->
+<section class="reserve">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en-s">RESERVATION</span>
+      <h2>ご予約はこちら</h2>
+      <div class="rule"></div>
+    </div>
+    <p class="lead">ボタンを押すとLINEのトークが開き、<br>予約テンプレが入力された状態になります。<br>埋めて送るだけで、ご予約完了です。</p>
+
+    <div class="cta-row">
+      <a class="cta" href="https://line.me/R/oaMessage/%40931bofos/?text=%E5%90%8C%E4%BC%B4%E3%83%8A%E3%82%A4%E3%83%88%E4%BA%88%E7%B4%84%F0%9F%8C%99%0A%E2%91%A0%E6%97%A5%E4%BB%98%EF%BC%8824%E6%97%A5+or+25%E6%97%A5%EF%BC%89%EF%BC%9A%0A%E2%91%A1%E3%81%94%E5%85%A5%E5%BA%97%E6%99%82%E9%96%93%EF%BC%9A%0A%E2%91%A2%E4%BA%BA%E6%95%B0%EF%BC%9A%0A%E2%91%A3%E3%82%B3%E3%83%BC%E3%82%B9%EF%BC%88%E3%81%8A%E8%82%891%E7%A8%AE%C2%A58%2C200%EF%BC%8F2%E7%A8%AE%E9%A3%9F%E3%81%B9%E6%AF%94%E3%81%B9%C2%A511%2C500%EF%BC%8F3%E7%A8%AE%E3%81%9C%E3%82%93%E3%81%B6%C2%A517%2C000%EF%BC%89%EF%BC%9A%0A%E2%91%A4%E3%81%94%E5%8B%A4%E5%8B%99%E5%85%88%E3%81%AE%E3%81%8A%E5%BA%97%EF%BC%9A">LINEで予約する 🌙</a>
+      <a class="tel en" href="tel:09082922774">090-8292-2774</a>
+    </div>
+
+    <p class="foot-note">
+      ※ ご予約は2名様より承ります。<br>
+      ※ キャンセルは前日18時までにご連絡ください。当日・無断キャンセルはキャンセル料（コース料金の100%）が発生します。<br>
+      ※ コース内容は仕入れ状況により変更になる場合がございます。
+    </p>
+  </div>
+</section>
+
+<footer>
+  <img class="f-logo" src="../assets/douhan_logo_a665d73d.png" alt="夢月 MUTSUKI 宮古島" onerror="this.style.display='none'">
+  <p>沖縄県宮古島市平良下里65-2 FC-1ビル 1F<br>ディナー 17:00–22:00 ／ 深夜アラカルト 22:00–翌4:00</p>
+</footer>
+
+</body>
+</html>
