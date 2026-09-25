@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>葉月の宴｜赤牛サーロイン新登場×全コース30%OFF｜夢月 MUTSUKI 宮古島</title>
+<meta name="description" content="8月限定「葉月の宴」。阿蘇あか牛サーロインステーキコースが1日10食限定で新登場¥8,000（税抜）。さらに全コース30%OFF。宮古島の高級肉料理 夢月 MUTSUKI。">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="葉月の宴｜サーロイン新登場 ¥8,000・全コース30%OFF（8月限定）">
+<meta property="og:description" content="阿蘇あか牛サーロインステーキコース、1日10食限定で新登場。全コース30%OFFは8月だけ。夢月 MUTSUKI 宮古島">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0e0b08;
+  --paper2:#1a1510;
+  --sumi:#120f0c;
+  --aka:#c94f4f;
+  --aka-l:#e06060;
+  --gold:#c9a76a;
+  --gold-l:#e0c894;
+  --washi:#e8e0d4;
+  --muted:#7a7060;
+  --serif:'Shippori Mincho B1',serif;
+  --latin:'Cormorant Garamond',serif;
+  --num:'Montserrat',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--washi);font-family:var(--serif);line-height:1.9;letter-spacing:.06em;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:680px;margin:0 auto;padding:0 28px}
+
+/* ─── HERO ─── */
+.hero{
+  position:relative;
+  min-height:100svh;
+  display:grid;
+  grid-template-rows:1fr auto;
+  overflow:hidden;
+  background:var(--ink);
+}
+.hero-img{
+  position:absolute;inset:0;
+  background:url('../assets/cf_hazuki_hero_sumi-fwNYFenoagGisUfd7zEQ7L.webp') center/cover no-repeat;
+  opacity:.55;
+  filter:saturate(.7) contrast(1.1);
+}
+.hero-img::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to bottom,rgba(14,11,8,.3) 0%,rgba(14,11,8,.1) 40%,rgba(14,11,8,.7) 80%,var(--ink) 100%);
+}
+/* 章番号 大きく背景に */
+.hero-kanji{
+  position:absolute;right:-0.05em;top:50%;transform:translateY(-55%);
+  font-size:clamp(200px,38vw,420px);
+  font-family:var(--serif);font-weight:800;
+  color:transparent;
+  -webkit-text-stroke:1px rgba(201,167,106,.12);
+  line-height:1;pointer-events:none;user-select:none;
+  letter-spacing:-.05em;
+}
+/* 左の朱縦線 */
+.hero-line{
+  position:absolute;left:clamp(20px,5vw,48px);top:0;bottom:0;
+  width:1px;background:linear-gradient(to bottom,transparent 0%,var(--aka) 20%,var(--aka) 80%,transparent 100%);
+  opacity:.6;
+}
+.hero-inner{
+  position:relative;z-index:2;
+  display:flex;flex-direction:column;
+  justify-content:flex-end;
+  padding:0 0 60px clamp(44px,8vw,80px);
+  min-height:100svh;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--aka);
+  color:var(--aka-l);font-size:11px;letter-spacing:.28em;
+  padding:6px 16px;border-radius:0;
+  font-family:var(--latin);font-style:italic;
+  margin-bottom:24px;width:fit-content;
+  background:rgba(201,79,79,.08);
+}
+.hero-badge::before{content:"";width:20px;height:1px;background:var(--aka);display:block}
+.hero-en{
+  font-family:var(--latin);font-style:italic;font-weight:300;
+  font-size:clamp(13px,2.2vw,16px);color:var(--gold);
+  letter-spacing:.22em;margin-bottom:12px;
+}
+.hero h1{
+  font-size:clamp(52px,12vw,96px);font-weight:800;
+  color:var(--washi);letter-spacing:.08em;line-height:1.1;
+  margin-bottom:6px;
+  text-shadow:0 2px 40px rgba(0,0,0,.6);
+}
+.hero-sub{
+  font-size:clamp(13px,2.4vw,16px);color:var(--muted);
+  letter-spacing:.18em;margin-bottom:36px;
+  font-family:var(--num);font-weight:300;
+}
+/* 大見出しオファー */
+.hero-offer{
+  margin-bottom:40px;
+}
+.hero-offer .label{
+  font-size:13px;color:var(--aka-l);letter-spacing:.2em;
+  display:block;margin-bottom:8px;
+}
+.hero-offer .product{
+  font-size:clamp(18px,3.6vw,24px);color:var(--washi);
+  font-weight:600;letter-spacing:.1em;line-height:1.6;
+  display:block;margin-bottom:12px;
+}
+.hero-offer .price-row{
+  display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+}
+.hero-offer .price{
+  font-family:var(--num);font-size:clamp(52px,11vw,80px);
+  font-weight:600;color:var(--gold-l);line-height:1;
+  letter-spacing:-.01em;
+}
+.hero-offer .price-unit{
+  font-size:14px;color:var(--muted);font-family:var(--num);
+}
+.hero-offer .limit-tag{
+  display:inline-block;
+  border:1px solid rgba(201,167,106,.4);
+  color:var(--gold);font-size:12px;letter-spacing:.16em;
+  padding:5px 14px;margin-left:8px;
+  font-family:var(--num);font-weight:300;
+}
+/* サブオファー */
+.hero-sub-offer{
+  font-size:clamp(15px,3vw,18px);color:var(--washi);
+  letter-spacing:.12em;margin-bottom:44px;line-height:1.8;
+}
+.hero-sub-offer b{color:var(--gold-l);font-size:1.2em}
+/* CTA */
+.cta-primary{
+  display:inline-block;
+  background:var(--aka);color:#fff;
+  font-size:14px;letter-spacing:.22em;font-weight:600;
+  padding:18px 48px;
+  border:none;cursor:pointer;
+  transition:background .25s,transform .15s;
+  font-family:var(--serif);
+}
+.cta-primary:hover{background:#b03030;transform:translateY(-1px)}
+.cta-primary:active{transform:translateY(0)}
+.cta-ghost{
+  display:inline-block;
+  background:transparent;color:var(--gold-l);
+  font-size:13px;letter-spacing:.2em;font-weight:400;
+  padding:16px 40px;
+  border:1px solid rgba(201,167,106,.5);
+  transition:border-color .25s,color .25s;
+  font-family:var(--serif);
+}
+.cta-ghost:hover{border-color:var(--gold-l);color:#fff}
+.cta-row{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+
+/* ─── SECTION COMMON ─── */
+section{padding:80px 0;position:relative}
+.sec-label{
+  display:flex;align-items:center;gap:16px;
+  font-family:var(--latin);font-style:italic;
+  font-size:11px;color:var(--aka);letter-spacing:.3em;
+  margin-bottom:20px;
+}
+.sec-label::before{content:"";width:32px;height:1px;background:var(--aka)}
+.sec-num{
+  font-size:clamp(100px,18vw,160px);
+  font-family:var(--serif);font-weight:800;
+  color:transparent;
+  -webkit-text-stroke:1px rgba(201,167,106,.1);
+  line-height:.85;
+  position:absolute;right:0;top:-20px;
+  pointer-events:none;user-select:none;
+  letter-spacing:-.05em;
+}
+.sec-title{
+  font-size:clamp(22px,5vw,32px);font-weight:700;
+  color:var(--washi);letter-spacing:.12em;
+  margin-bottom:8px;line-height:1.4;
+}
+.sec-title-en{
+  font-family:var(--latin);font-style:italic;font-weight:300;
+  font-size:clamp(13px,2vw,15px);color:var(--gold);
+  letter-spacing:.24em;display:block;margin-bottom:28px;
+}
+.rule{width:40px;height:1px;background:var(--aka);margin:20px 0 36px}
+
+/* ─── SIRLOIN SECTION ─── */
+.sirloin{background:var(--paper2)}
+.sirloin-inner{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media(max-width:600px){.sirloin-inner{grid-template-columns:1fr;gap:32px}}
+.sirloin-img{
+  width:100%;aspect-ratio:3/4;object-fit:cover;
+  filter:saturate(.75) contrast(1.05);
+  border:1px solid rgba(201,167,106,.15);
+}
+.sirloin-text p{font-size:15px;margin-bottom:1.4em;color:var(--washi);opacity:.9}
+.sirloin-text p b{color:var(--gold-l)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.tag{
+  border:1px solid rgba(201,79,79,.5);
+  color:var(--aka-l);font-size:12px;padding:6px 16px;
+  letter-spacing:.12em;
+}
+
+/* ─── PRICE SECTION ─── */
+.price-section{background:var(--sumi)}
+.course-t{width:100%;border-collapse:collapse}
+.course-t tr{border-bottom:1px solid rgba(201,167,106,.15)}
+.course-t tr:first-child{border-top:1px solid rgba(201,167,106,.15)}
+.course-t td{padding:20px 8px;font-size:15px;vertical-align:top}
+.course-t .c-name{color:var(--washi);font-weight:600;letter-spacing:.08em}
+.course-t .c-sub{display:block;color:var(--muted);font-size:12.5px;font-weight:400;letter-spacing:.04em;margin-top:4px}
+.course-t .c-price{text-align:right;white-space:nowrap;vertical-align:middle}
+.was{color:var(--muted);text-decoration:line-through;font-size:13px;display:block;font-family:var(--num);font-weight:300}
+.now{color:var(--gold-l);font-weight:600;font-size:20px;font-family:var(--num);letter-spacing:.02em}
+.new-row{background:rgba(201,79,79,.06)}
+.new-row .c-name{color:var(--aka-l)}
+.newmark{
+  display:inline-block;
+  background:var(--aka);color:#fff;
+  font-size:10px;letter-spacing:.2em;
+  padding:3px 8px;margin-bottom:6px;
+  font-family:var(--latin);font-style:italic;
+}
+.course-note{font-size:12.5px;color:var(--muted);margin-top:20px;line-height:2.1;padding-left:8px;border-left:2px solid rgba(201,79,79,.3)}
+
+/* ─── COND SECTION ─── */
+.cond{background:var(--paper2)}
+.cond-list{margin-top:8px}
+.cond-row{
+  display:flex;gap:24px;
+  padding:18px 0;
+  border-bottom:1px solid rgba(201,167,106,.12);
+}
+.cond-row:first-child{border-top:1px solid rgba(201,167,106,.12)}
+.cond-row dt{
+  flex:0 0 88px;
+  color:var(--aka-l);font-size:13.5px;letter-spacing:.1em;
+  font-weight:600;padding-top:2px;
+}
+.cond-row dd{flex:1;font-size:15px;color:var(--washi)}
+.cond-row dd small{display:block;color:var(--muted);font-size:12.5px;margin-top:4px}
+
+/* ─── NIGHT SECTION ─── */
+.night{background:var(--sumi)}
+.night-box{
+  border-left:3px solid var(--aka);
+  padding:28px 32px;
+  background:rgba(201,79,79,.04);
+}
+.night-box h3{
+  font-size:20px;color:var(--gold-l);
+  letter-spacing:.14em;margin-bottom:14px;
+  font-weight:700;
+}
+.night-box p{font-size:14.5px;color:var(--washi);opacity:.9}
+.night-box p b{color:var(--gold-l)}
+
+/* ─── ACCESS ─── */
+.access{background:var(--paper2)}
+.map-wrap iframe{
+  width:100%;height:300px;
+  border:1px solid rgba(201,167,106,.2);
+  display:block;filter:grayscale(.6) contrast(1.1);
+}
+.addr{
+  font-size:14px;color:var(--muted);
+  margin-top:18px;letter-spacing:.1em;
+  padding-left:12px;border-left:2px solid rgba(201,167,106,.3);
+}
+
+/* ─── RESERVE ─── */
+.reserve{
+  background:linear-gradient(180deg,var(--sumi),#0a0806);
+  text-align:center;
+}
+.reserve .lead{
+  font-size:16px;color:var(--washi);
+  margin-bottom:32px;line-height:2;
+  opacity:.9;
+}
+.tel{
+  font-family:var(--num);font-size:24px;font-weight:300;
+  color:var(--gold-l);letter-spacing:.08em;
+  display:block;margin-top:20px;
+}
+.foot-note{
+  font-size:12px;color:var(--muted);
+  margin-top:28px;line-height:2.2;
+  text-align:left;
+  padding:20px;
+  border:1px solid rgba(201,167,106,.1);
+  background:rgba(255,255,255,.02);
+}
+
+/* ─── FOOTER ─── */
+footer{
+  background:#060402;
+  text-align:center;padding:48px 22px;
+}
+.f-logo{
+  width:100px;height:100px;object-fit:cover;
+  border-radius:4px;margin:0 auto 20px;display:block;
+  border:1px solid rgba(201,167,106,.2);
+  filter:grayscale(.2);
+}
+footer p{color:var(--muted);font-size:12px;line-height:2}
+
+/* ─── SCROLL HINT ─── */
+.scroll-hint{
+  position:absolute;bottom:32px;left:clamp(44px,8vw,80px);
+  display:flex;align-items:center;gap:10px;
+  font-family:var(--latin);font-style:italic;
+  font-size:11px;color:var(--muted);letter-spacing:.22em;
+  z-index:2;
+}
+.scroll-hint::after{
+  content:"";width:40px;height:1px;background:var(--muted);
+  animation:scroll-line 2s ease-in-out infinite;
+}
+@keyframes scroll-line{0%,100%{width:40px;opacity:.4}50%{width:60px;opacity:1}}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:640px){
+  .hero-inner{padding:0 0 60px 36px}
+  .hero-line{left:16px}
+  .cta-row{align-items:stretch}
+  .cta-primary,.cta-ghost{text-align:center}
+  .night-box{padding:20px 20px}
+}
+</style>
+<link rel="canonical" href="https://mutsuki-miyakojima.com/hazuki_v2/index.html" /></head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-img"></div>
+  <div class="hero-kanji">葉</div>
+  <div class="hero-line"></div>
+  <div class="hero-inner">
+    <div class="hero-badge">AUGUST ONLY &nbsp;｜&nbsp; 2026</div>
+    <div class="hero-en">Summer Special</div>
+    <h1>葉月の宴</h1>
+    <div class="hero-sub">8.1 SAT &nbsp;—&nbsp; 8.31 MON</div>
+
+    <div class="hero-offer">
+      <span class="label">NEW ARRIVAL &nbsp;—&nbsp; 1日10食限定</span>
+      <span class="product">阿蘇あか牛<br>サーロインステーキコース</span>
+      <div class="price-row">
+        <span class="price">¥8,000</span>
+        <span class="price-unit">（税抜）</span>
+        <span class="limit-tag">10 meals / day</span>
+      </div>
+    </div>
+
+    <p class="hero-sub-offer">さらに、8月は<br><b>全コース 30% OFF</b></p>
+
+    <div class="cta-row">
+      <a class="cta-primary" href="https://www.tablecheck.com/mutsuki-miyakojima/reserve" target="_blank" rel="noopener">空席を確認して予約する</a>
+      <a class="cta-ghost" href="tel:09082922774">090-8292-2774</a>
+    </div>
+  </div>
+  <div class="scroll-hint">scroll</div>
+</header>
+
+<!-- 一 SIRLOIN -->
+<section class="sirloin">
+  <div class="wrap" style="position:relative">
+    <div class="sec-num">一</div>
+    <div class="sec-label">New Arrival</div>
+    <h2 class="sec-title">阿蘇あか牛、<br>サーロインの一皿。</h2>
+    <span class="sec-title-en">Aso Akagyu Sirloin Course</span>
+    <div class="rule"></div>
+    <div class="sirloin-inner">
+      <img class="sirloin-img" src="../assets/cf_hazuki_steak_sumi-V2eX7iDY9sXKP95N4TAL4B.webp" alt="阿蘇あか牛サーロインステーキ">
+      <div class="sirloin-text">
+        <p>阿蘇の大草原で育つ褐毛和種「あか牛」。赤身の旨みと、サーロインならではのやわらかな脂——その両方を、石のプレートで最後のひと火まで愉しむコースに仕立てました。</p>
+        <p>食前酒から前菜、お造り、メインのサーロイン、〆、デザートまで。<b>¥20,000のコースと同じ流れを、¥8,000（税抜）で。</b>ご用意できるのは、一日10食だけです。</p>
+        <div class="tags">
+          <span class="tag">1日10食限定</span>
+          <span class="tag">完全コース仕立て</span>
+          <span class="tag">売り切れ御免</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 二 PRICE -->
+<section class="price-section">
+  <div class="wrap" style="position:relative">
+    <div class="sec-num">二</div>
+    <div class="sec-label">August Price</div>
+    <h2 class="sec-title">8月の料金</h2>
+    <span class="sec-title-en">Per person, tax excluded</span>
+    <div class="rule"></div>
+    <table class="course-t">
+      <tr class="new-row">
+        <td class="c-name">
+          <span class="newmark">NEW ｜ 1日10食限定</span>
+          サーロインステーキコース
+        </td>
+        <td class="c-price"><span class="now">¥8,000</span></td>
+      </tr>
+      <tr>
+        <td class="c-name">新月<span class="c-sub">黒豚しゃぶしゃぶ／あか牛もつ鍋</span></td>
+        <td class="c-price"><span class="was">¥8,000</span><span class="now">¥5,600</span></td>
+      </tr>
+      <tr>
+        <td class="c-name">三日月<span class="c-sub">お肉1種の鉄板コース</span></td>
+        <td class="c-price"><span class="was">¥12,000</span><span class="now">¥8,400</span></td>
+      </tr>
+      <tr>
+        <td class="c-name">上弦の月<span class="c-sub">2種食べ比べコース</span></td>
+        <td class="c-price"><span class="was">¥15,000</span><span class="now">¥10,500</span></td>
+      </tr>
+      <tr>
+        <td class="c-name">十三夜月<span class="c-sub">馬・牛・鶏 3種の最上位</span></td>
+        <td class="c-price"><span class="was">¥20,000</span><span class="now">¥14,000</span></td>
+      </tr>
+    </table>
+    <p class="course-note">※ 表示価格はすべて税抜です。<br>※ 全コース：食前酒・前菜・お造り・メイン・〆・季節の果実・デザート付き。<br>※ サーロインステーキコースは割引対象外・他割引との併用不可。</p>
+  </div>
+</section>
+
+<!-- 三 INFORMATION -->
+<section class="cond">
+  <div class="wrap" style="position:relative">
+    <div class="sec-num">三</div>
+    <div class="sec-label">Information</div>
+    <h2 class="sec-title">ご利用案内</h2>
+    <span class="sec-title-en">Terms &amp; Conditions</span>
+    <div class="rule"></div>
+    <dl class="cond-list">
+      <div class="cond-row"><dt>期間</dt><dd>2026年8月1日（土）〜8月31日（月）</dd></div>
+      <div class="cond-row"><dt>時間</dt><dd>ディナー 17:00〜22:00<small>完全予約制・2名様より承ります</small></dd></div>
+      <div class="cond-row"><dt>対象</dt><dd>どなたでも<small>島民の方も、ご旅行中の方も。ご予約はお早めに</small></dd></div>
+      <div class="cond-row"><dt>サーロイン</dt><dd>1日10食限定・なくなり次第終了<small>確実にご希望の方はご予約時に「サーロインコース」とお申し付けください</small></dd></div>
+      <div class="cond-row"><dt>ご予約</dt><dd>TableCheck・お電話にて<small>キャンセルは前日18時まで</small></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- NIGHT -->
+<section class="night">
+  <div class="wrap">
+    <div class="night-box">
+      <h3>夜は、朝4時まで。</h3>
+      <p>コースのあとも、22:00〜翌4:00は深夜アラカルト営業。<br>馬刺し、あか牛、〆の宮古そば湯豆腐。<br><b>2軒目にも、〆の一杯にも。</b></p>
+    </div>
+  </div>
+</section>
+
+<!-- ACCESS -->
+<section class="access">
+  <div class="wrap" style="position:relative">
+    <div class="sec-label">Access</div>
+    <h2 class="sec-title">アクセス</h2>
+    <span class="sec-title-en">Mutsuki, Miyakojima</span>
+    <div class="rule"></div>
+    <div class="map-wrap">
+      <iframe src="https://maps.google.com/maps?q=%E5%A4%A2%E6%9C%88%20MUTSUKI%20%E5%AE%AE%E5%8F%A4%E5%B3%B6%20%E5%B9%B3%E8%89%AF%E4%B8%8B%E9%87%8C&z=17&ie=UTF8&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="夢月 MUTSUKI 地図"></iframe>
+    </div>
+    <p class="addr">〒906-0013 沖縄県宮古島市平良下里65-2 FC-1ビル 1F</p>
+    <div style="margin-top:24px">
+      <a class="cta-ghost" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A2%E6%9C%88%20MUTSUKI%20%E5%AE%AE%E5%8F%A4%E5%B3%B6" target="_blank" rel="noopener">Googleマップで開く →</a>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVE -->
+<section class="reserve">
+  <div class="wrap">
+    <div class="sec-label" style="justify-content:center">Reservation</div>
+    <h2 class="sec-title" style="text-align:center">ご予約はこちら</h2>
+    <span class="sec-title-en" style="display:block;text-align:center">Sirloin: 10 meals per day</span>
+    <div class="rule" style="margin:20px auto 36px"></div>
+    <p class="lead">サーロインは1日10食。<br>ご希望の日が決まったら、お早めにどうぞ。</p>
+    <div class="cta-row" style="align-items:center">
+      <a class="cta-primary" href="https://www.tablecheck.com/mutsuki-miyakojima/reserve" target="_blank" rel="noopener">TableCheckで予約する</a>
+      <a class="tel" href="tel:09082922774">090-8292-2774</a>
+    </div>
+    <div class="foot-note">
+      ※ ご予約は2名様より承ります。<br>
+      ※ キャンセルは前日18時までにご連絡ください。当日・無断キャンセルはキャンセル料（コース料金の100%）が発生します。<br>
+      ※ コース内容は仕入れ状況により変更になる場合がございます。
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img class="f-logo" src="../assets/hazuki_logo_d45ab744.png" alt="夢月 MUTSUKI 宮古島" onerror="this.style.display='none'">
+  <p>高級肉料理専門店 夢月 MUTSUKI<br>ディナー 17:00–22:00 ／ 深夜アラカルト 22:00–翌4:00</p>
+</footer>
+
+</body>
+</html>
