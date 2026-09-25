@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>一品料理 ｜ 夢月 MUTSUKI（宮古島・平良）</title>
+<meta name="description" content="夢月の一品料理。お造り・ステーキ・その他、熊本の銘肉を使ったアラカルトメニューをご用意しています。20:00〜24:00（LO 23:00）" />
+<meta property="og:title" content="一品料理 ｜ 夢月 MUTSUKI" />
+<meta property="og:description" content="ステーキアラカルト 20:00〜24:00（LO 23:00）。お造り・ステーキ・その他、熊本の銘肉を使ったアラカルトメニュー。" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Serif+JP:wght@200;300;400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #080604; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #c9a86a; text-decoration: none; }
+  a:hover { color: #e7d3aa; }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes shimmer { 0% { transform: translateX(-100%); } 60% { transform: translateX(100%); } 100% { transform: translateX(100%); } }
+
+  /* Language bar */
+  #lang-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(8,6,4,0.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(201,168,106,0.18);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  #lang-bar .brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    color: rgba(201,168,106,0.8);
+    text-decoration: none;
+  }
+  #lang-bar .brand:hover { color: #c9a86a; }
+  #lang-bar .lang-btns { display: flex; }
+  #lang-bar button {
+    background: none;
+    border: none;
+    color: rgba(201,168,106,0.5);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    padding: 12px 12px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  #lang-bar button:hover { color: #c9a86a; }
+  #lang-bar button.active { color: #c9a86a; border-bottom: 1.5px solid rgba(201,168,106,0.7); }
+
+  [data-lang] { display: none; }
+  [data-lang].visible { display: inline; }
+  [data-lang-block] { display: none; }
+  [data-lang-block].visible { display: block; }
+
+  /* Menu item row */
+  .menu-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(201,168,106,0.08);
+    gap: 16px;
+    transition: background 0.2s;
+  }
+  .menu-row:last-child { border-bottom: none; }
+  .menu-row:hover { background: rgba(201,168,106,0.03); margin: 0 -16px; padding-left: 16px; padding-right: 16px; }
+  .menu-row .item-name {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #e7e1d5;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    flex: 1;
+  }
+  .menu-row .item-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    color: rgba(201,168,106,0.6);
+    letter-spacing: 0.12em;
+    display: block;
+    margin-top: 2px;
+  }
+  .menu-row .item-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: #c9a86a;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Category header */
+  .cat-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 48px 0 20px;
+  }
+  .cat-header:first-of-type { margin-top: 0; }
+  .cat-title-jp {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #e7e1d5;
+    letter-spacing: 0.12em;
+  }
+  .cat-title-en {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    letter-spacing: 0.35em;
+    color: rgba(201,168,106,0.55);
+    text-transform: uppercase;
+  }
+  .cat-line {
+    flex: 1;
+    height: 1px;
+    background: rgba(201,168,106,0.15);
+  }
+
+  /* Gold divider */
+  .gold-divider {
+    width: 40px;
+    height: 1px;
+    background: rgba(201,168,106,0.5);
+    margin: 0 auto;
+  }
+
+  @media (max-width: 480px) {
+    .menu-row .item-name { font-size: 14px; }
+    .menu-row .item-price { font-size: 15px; }
+    .cat-title-jp { font-size: 18px; }
+  }
+</style>
+<link rel="canonical" href="https://mutsuki-miyakojima.com/alacarte/index.html" /></head>
+<body>
+<div style="background:#080604;color:#e7e1d5;font-family:'Noto Serif JP',serif;min-height:100vh;display:flex;justify-content:center">
+<div style="width:100%;max-width:520px;background:#080604;overflow:hidden">
+
+  <!-- LANGUAGE BAR -->
+  <div id="lang-bar">
+    <a href="/" class="brand">夢月 MUTSUKI</a>
+    <div class="lang-btns">
+      <button onclick="setLang('ja')" class="active" id="btn-ja">日本語</button>
+      <button onclick="setLang('en')" id="btn-en">EN</button>
+      <button onclick="setLang('zh')" id="btn-zh">中文</button>
+      <button onclick="setLang('ko')" id="btn-ko">한국어</button>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section style="position:relative;min-height:52vh;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:0 28px 52px;overflow:hidden">
+    <!-- Background gradient -->
+    <div style="position:absolute;inset:0;background:linear-gradient(160deg,#0c0a07 0%,#1a1408 50%,#0c0a07 100%)"></div>
+    <!-- Gold shimmer -->
+    <div style="position:absolute;inset:0;overflow:hidden;pointer-events:none">
+      <div style="position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(105deg,transparent 30%,rgba(201,168,106,0.04) 50%,transparent 70%);animation:shimmer 6s ease-in-out infinite"></div>
+    </div>
+    <!-- Moon glow -->
+    <div style="position:absolute;top:30%;right:10%;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,106,0.06) 0%,transparent 70%);pointer-events:none"></div>
+    <!-- Content -->
+    <div style="position:relative;text-align:center;animation:fadeUp 1s ease both">
+      <!-- Section label -->
+      <div style="display:inline-flex;align-items:center;gap:12px;margin-bottom:28px">
+        <span style="width:28px;height:1px;background:rgba(201,168,106,0.4);display:block"></span>
+        <span style="font-family:'Cormorant Garamond',serif;font-size:10px;letter-spacing:0.4em;color:rgba(201,168,106,0.6);text-transform:uppercase">
+          <span data-lang="ja" class="visible">お造り・ステーキ・一品</span>
+          <span data-lang="en">Sashimi · Steak · À la carte</span>
+          <span data-lang="zh">刺身・牛排・單點</span>
+          <span data-lang="ko">사시미・스테이크・단품</span>
+        </span>
+        <span style="width:28px;height:1px;background:rgba(201,168,106,0.4);display:block"></span>
+      </div>
+      <!-- Title -->
+      <h1 style="margin:0 0 16px;font-family:'Noto Serif JP',serif;font-size:clamp(32px,8vw,48px);font-weight:200;letter-spacing:0.18em;color:#f4eee3;line-height:1.3">
+        <span data-lang="ja" class="visible">一品料理</span>
+        <span data-lang="en">À la Carte</span>
+        <span data-lang="zh">單點料理</span>
+        <span data-lang="ko">일품 요리</span>
+      </h1>
+      <div class="gold-divider" style="margin-bottom:20px"></div>
+      <!-- Subtitle -->
+      <p style="margin:0;font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:0.3em;color:rgba(201,168,106,0.7);text-transform:uppercase">
+        <span data-lang="ja" class="visible">A la carte</span>
+        <span data-lang="en">One Dish at a Time</span>
+        <span data-lang="zh">A la carte</span>
+        <span data-lang="ko">A la carte</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- MENU CONTENT -->
+  <section style="padding:52px 28px 64px">
+
+    <!-- Note -->
+    <div style="text-align:center;margin-bottom:44px">
+      <p style="font-family:'Noto Serif JP',serif;font-size:12px;line-height:2.2;letter-spacing:0.08em;color:rgba(231,225,213,0.55)">
+        <span data-lang="ja" class="visible">価格は税込表記です。メニューは仕入れ状況により変更になる場合がございます。</span>
+        <span data-lang="en">All prices include tax. Menu items are subject to change based on availability.</span>
+        <span data-lang="zh">價格含稅。菜單內容可能因進貨狀況而有所變動。</span>
+        <span data-lang="ko">가격은 세금 포함입니다. 메뉴는 재료 수급 상황에 따라 변경될 수 있습니다.</span>
+      </p>
+    </div>
+
+    <!-- ── お造り / SASHIMI ── -->
+    <div class="cat-header">
+      <div>
+        <div class="cat-title-jp">
+          <span data-lang="ja" class="visible">お造り</span>
+          <span data-lang="en">Sashimi</span>
+          <span data-lang="zh">刺身</span>
+          <span data-lang="ko">사시미</span>
+        </div>
+        <div class="cat-title-en">SASHIMI</div>
+      </div>
+      <div class="cat-line"></div>
+    </div>
+
+    <div class="menu-row">
+      <div class="item-name">
+        <span data-lang="ja" class="visible">あか牛の炙り新鮮レバー</span>
+        <span data-lang="en">Seared Fresh Akaushi Liver</span>
+        <span data-lang="zh">炙烤新鮮赤牛肝</span>
+        <span data-lang="ko">아카우시 신선 간 구이</span>
+        <span class="item-sub">Seared Fresh Akaushi Liver</span>
+      </div>
+      <div class="item-price">¥2,500</div>
+    </div>
+
+    <div class="menu-row">
+      <div class="item-name">
+        <span data-lang="ja" class="visible">あか牛の炙りタンユッケ</span>
+        <span data-lang="en">Seared Akaushi Tongue Yukhoe</span>
+        <span data-lang="zh">炙烤赤牛舌韓式生拌</span>
+        <span data-lang="ko">아카우시 혀 육회 구이</span>
+        <span class="item-sub">Seared Akaushi Tongue Yukhoe</span>
+      </div>
+      <div class="item-price">¥2,000</div>
+    </div>
+
+    <div class="menu-row">
+      <div class="item-name">
+        <span data-lang="ja" class="visible">あか牛の白センマイ刺し</span>
+        <span data-lang="en">Akaushi White Tripe Sashimi</span>
+        <span data-lang="zh">赤牛白百葉刺身</span>
+        <span data-lang="ko">아카우시 흰 천엽 사시미</span>
+        <span class="item-sub">Akaushi White Tripe Sashimi</span>
+      </div>
+      <div class="item-price">¥2,000</div>
+    </div>
+
+    <div class="menu-row">
+      <div class="item-name">
+        <span data-lang="ja" class="visible">馬刺し三種盛り</span>
+        <span data-lang="en">Horse Sashimi, Three Cuts</span>
+        <span data-lang="zh">馬肉刺身三種拼盤</span>
+        <span data-lang="ko">말고기 사시미 3종 모듬</span>
+        <span class="item-sub">Horse Sashimi, Three Cuts</span>
+      </div>
+      <div class="item-price">¥3,000</div>
+    </div>
+
+    <div class="menu-row">
+      <div class="item-name">
+        <span data-lang="ja" class="visible">天草大王レア炙り刺し</span>
+        <span data-lang="en">Amakusa Daio Chicken, Rare Seared</span>
+        <span data-lang="zh">天草大王地雞炙烤半生刺身</span>
+        <span data-lang="ko">아마쿠사 다이오 닭 레어 구이 사시미</span>
+        <span class="item-sub">Amakusa Daio Chicken, Rare Seared</span>
+      </div>
+      <div class="item-price">¥2,000</div>
+    </div>
+
+    <!-- ── ステーキ / STEAK ── -->
+    <div class="cat-header">
+      <div>
+        <div class="cat-title-jp">
+          <span data-lang="ja" class="visible">ステーキ</span>
+          <span data-lang="en">Steak</span>
+          <span data-lang="zh">牛排</span>
+          <span data-lang="ko">스테이크</span>
+        </div>
+        <div class="cat-title-en">STEAK</div>
+      </div>
+      <div class="cat-line"></div>
+    </div>
+
+    <div class="menu-row">
+      <div class="item-name">
+        <span data-lang="ja" class="visible">あか牛のヒレステーキ 120g</span>
+        <span data-lang="en">Akaushi Fillet Steak 120g</span>
+        <span data-lang="zh">赤牛菲力牛排 120g</span>
+        <span data-lang="ko">아카우시 안심 스테이크 120g</span>
+        <span class="item-sub">Akaushi Fillet Steak 120g</span>
+      </div>
+      <div class="item-price">¥6,000</div>
+    </div>
+
+    <div class="menu-row">
+      <div class="item-name">
+        <span data-lang="ja" class="visible">あか牛のサーロインステーキ 200g</span>
+        <span data-lang="en">Akaushi Sirloin Steak 200g</span>
+        <span data-lang="zh">赤牛沙朗牛排 200g</span>
+        <span data-lang="ko">아카우시 등심 스테이크 200g</span>
+        <span class="item-sub">Akaushi Sirloin Steak 200g</span>
+      </div>
+      <div class="item-price">¥8,000</div>
+    </div>
+
+    <div class="menu-row">
+      <div class="item-name">
+        <span data-lang="ja" class="visible">馬肉カイノミステーキ 100g</span>
+        <span data-lang="en">Horse Kainomi Steak 100g</span>
+        <span data-lang="zh">馬肉腹肉牛排 100g</span>
+        <span data-lang="ko">말고기 카이노미 스테이크 100g</span>
+        <span class="item-sub">Horse Kainomi Steak 100g</span>
+      </div>
+      <div class="item-price">¥5,000</div>
+    </div>
+
+    <div class="menu-row">
+      <div class="item-name">
+        <span data-lang="ja" class="visible">天草大王地鶏のタタキステーキ 120g</span>
+        <span data-lang="en">Amakusa Daio Chicken Tataki Steak 120g</span>
+        <span data-lang="zh">天草大王地雞半生牛排 120g</span>
+        <span data-lang="ko">아마쿠사 다이오 닭 타타키 스테이크 120g</span>
+        <span class="item-sub">Amakusa Daio Chicken Tataki Steak 120g</span>
+      </div>
+      <div class="item-price">¥3,500</div>
+    </div>
+
+    <!-- ── その他 / OTHERS ── -->
+    <div class="cat-header">
+      <div>
+        <div class="cat-title-jp">
+          <span data-lang="ja" class="visible">その他</span>
+          <span data-lang="en">Others</span>
+          <span data-lang="zh">其他</span>
+          <span data-lang="ko">기타</span>
+        </div>
+        <div class="cat-title-en">OTHERS</div>
+      </div>
+      <div class="cat-line"></div>
+    </div>
+
+    <div class="menu-row">
+      <div class="item-name">
+        <span data-lang="ja" class="visible">ホルモン天ぷら</span>
+        <span data-lang="en">Giblet Tempura</span>
+        <span data-lang="zh">內臟天婦羅</span>
+        <span data-lang="ko">호르몬 튀김</span>
+        <span class="item-sub">Giblet Tempura</span>
+      </div>
+      <div class="item-price">¥1,500</div>
+    </div>
+
+    <div class="menu-row">
+      <div class="item-name">
+        <span data-lang="ja" class="visible">俵おにぎり</span>
+        <span data-lang="en">Tawara Onigiri</span>
+        <span data-lang="zh">俵型飯糰</span>
+        <span data-lang="ko">타와라 주먹밥</span>
+        <span class="item-sub">Tawara Onigiri</span>
+      </div>
+      <div class="item-price">¥800</div>
+    </div>
+
+    <div class="menu-row">
+      <div class="item-name">
+        <span data-lang="ja" class="visible">デザート盛り合わせ</span>
+        <span data-lang="en">Assorted Desserts</span>
+        <span data-lang="zh">甜點拼盤</span>
+        <span data-lang="ko">디저트 모듬</span>
+        <span class="item-sub">Assorted Desserts</span>
+      </div>
+      <div class="item-price">¥700</div>
+    </div>
+
+  </section>
+
+  <!-- DIVIDER -->
+  <div style="height:1px;background:rgba(201,168,106,0.12);margin:0 28px"></div>
+
+  <!-- RESERVE CTA -->
+  <section style="padding:52px 28px 60px;text-align:center">
+    <p style="font-family:'Cormorant Garamond',serif;font-size:10px;letter-spacing:0.4em;color:rgba(201,168,106,0.5);text-transform:uppercase;margin:0 0 20px">
+      RESERVATION
+    </p>
+    <h2 style="font-family:'Noto Serif JP',serif;font-size:20px;font-weight:200;letter-spacing:0.12em;color:#e7e1d5;margin:0 0 12px;line-height:1.7">
+    <span data-lang="ja" class="visible">席のみのご予約も承ります</span>
+    <span data-lang="en">Seat-Only Reservations Available</span>
+    <span data-lang="zh">接受僅訂位預約</span>
+    <span data-lang="ko">좌석만 예약도 가능합니다</span>
+  </h2>
+  <p style="font-family:'Noto Serif JP',serif;font-size:12.5px;line-height:2.2;letter-spacing:0.06em;color:rgba(231,225,213,0.55);margin:0 0 32px">
+    <span data-lang="ja" class="visible">席料なし・ドリンク別途</span>
+    <span data-lang="en">No cover charge · Drinks extra</span>
+    <span data-lang="zh">無座位費・飲料另計</span>
+    <span data-lang="ko">좌석료 없음・음료 별도</span>
+  </p>
+    <a
+      href="https://www.tablecheck.com/ja/mutsuki-miyakojima/reserve"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="display:inline-block;width:100%;max-width:360px;padding:18px 24px;background:#a9843a;color:#100c07;font-family:'Noto Serif JP',serif;font-size:14px;font-weight:400;letter-spacing:0.18em;text-align:center;transition:filter 0.2s"
+      onmouseover="this.style.filter='brightness(1.1)'"
+      onmouseout="this.style.filter='brightness(1)'"
+    >
+      <span data-lang="ja" class="visible">TableCheck でご予約</span>
+      <span data-lang="en">Reserve via TableCheck</span>
+      <span data-lang="zh">透過 TableCheck 預約</span>
+      <span data-lang="ko">TableCheck 으로 예약</span>
+    </a>
+    <div style="margin-top:20px">
+      <a
+        href="tel:090-8292-2774"
+        style="display:inline-flex;align-items:center;gap:8px;font-family:'Cormorant Garamond',serif;font-size:14px;letter-spacing:0.15em;color:rgba(201,168,106,0.7);border:1px solid rgba(201,168,106,0.25);padding:12px 28px;transition:border-color 0.2s,color 0.2s"
+        onmouseover="this.style.borderColor='rgba(201,168,106,0.6)';this.style.color='#c9a86a'"
+        onmouseout="this.style.borderColor='rgba(201,168,106,0.25)';this.style.color='rgba(201,168,106,0.7)'"
+      >
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        090-8292-2774
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="border-top:1px solid rgba(201,168,106,0.12);padding:32px 28px;text-align:center">
+    <a href="/" style="display:inline-flex;align-items:baseline;gap:10px;text-decoration:none;margin-bottom:16px">
+      <span style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;letter-spacing:0.15em;color:rgba(201,168,106,0.8)">夢月</span>
+      <span style="font-family:'Cormorant Garamond',serif;font-size:10px;font-weight:300;letter-spacing:0.45em;color:rgba(201,168,106,0.45)">MUTSUKI</span>
+    </a>
+    <p style="font-family:'Noto Serif JP',serif;font-size:11px;color:rgba(231,225,213,0.3);letter-spacing:0.08em;margin:0 0 6px">
+      〒906-0013 沖縄県宮古島市平良下里65−2 FC-1ビル 1階
+    </p>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:10.5px;color:rgba(201,168,106,0.3);letter-spacing:0.2em;margin:0">
+      © 2026 夢月 MUTSUKI. All rights reserved.
+    </p>
+  </footer>
+
+</div>
+</div>
+
+<script>
+  var currentLang = 'ja';
+
+  function setLang(lang) {
+    currentLang = lang;
+    // Update buttons
+    ['ja','en','zh','ko'].forEach(function(l) {
+      var btn = document.getElementById('btn-' + l);
+      if (btn) btn.className = (l === lang) ? 'active' : '';
+    });
+    // Show/hide inline spans
+    document.querySelectorAll('[data-lang]').forEach(function(el) {
+      el.classList.toggle('visible', el.getAttribute('data-lang') === lang);
+    });
+    // Show/hide block elements
+    document.querySelectorAll('[data-lang-block]').forEach(function(el) {
+      el.classList.toggle('visible', el.getAttribute('data-lang-block') === lang);
+    });
+    // Persist
+    try { localStorage.setItem('mutsuki-lang', lang); } catch(e) {}
+  }
+
+  // Init from storage or browser
+  (function() {
+    var saved = null;
+    try { saved = localStorage.getItem('mutsuki-lang'); } catch(e) {}
+    var nav = navigator.language || '';
+    var detected = saved || (nav.startsWith('zh') ? 'zh' : nav.startsWith('ko') ? 'ko' : nav.startsWith('en') ? 'en' : 'ja');
+    setLang(detected);
+  })();
+</script>
+</body>
+</html>
