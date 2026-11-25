@@ -297,6 +297,12 @@ footer .fb{color:#fff;font-family:var(--mincho);font-size:17px;letter-spacing:.2
 .seatbtn:hover{background:var(--gold);color:var(--navy)}
 @media(max-width:860px){.wc{grid-template-columns:1fr;gap:20px;max-width:520px;margin:44px auto 0}}
 @media(max-width:420px){.wc .bd{padding:22px 18px 24px}.wc .prow{flex-direction:column;align-items:stretch}.wc .rbtn{text-align:center}}
+/* seasonal special (Christmas / year-end) */
+#special{background:var(--navy2);color:#fff}
+#special .stitle{color:#fff}
+#special .slead{color:rgba(255,255,255,.78)}
+#special .wc .w.xmas{border-color:var(--gold);box-shadow:0 0 40px rgba(201,169,97,.16)}
+#special .wc .ph .tag.red{background:#b8463a;color:#fff}
 .ala{background:#fff}
 .ala2{display:grid;grid-template-columns:1fr 1fr;gap:10px 48px;margin-top:46px}
 .ala2 h3{font-size:16px;letter-spacing:.14em;color:var(--navy2);font-weight:400;margin:22px 0 4px;padding-bottom:8px;border-bottom:1px solid var(--gold)}
@@ -555,12 +561,27 @@ footer .fb{color:#fff;font-family:var(--mincho);font-size:17px;letter-spacing:.2
     <h1>嚴選自日本各地的肉品。<br>今年冬天，<em>四款套餐</em>。</h1>
     <p class="sub">宮古島・平良　高級肉料理專門店</p>
     <div class="hero-cta">
+      <a href="#special" class="cta cta-g" data-until="2026-12-29T00:00:00+09:00">聖誕・忘年會方案</a>
       <a href="#course" class="cta cta-g">查看冬季限定套餐</a>
       <a onclick="gtag('event','reserve_click');" target="_blank" rel="noopener" href="https://www.tablecheck.com/zh-TW/mutsuki-miyakojima/reserve" class="cta cta-o">線上預約</a>
     </div>
     <p class="hero-note">18:00〜翌日4:00／週一公休（逢假日營業）</p>
   </div>
 </div>
+
+<section id="special">
+  <div class="wrap rev">
+    <p class="eyebrow">SEASONAL SPECIAL</p>
+    <h2 class="stitle">聖誕・忘年會 特別方案</h2>
+    <div class="rule"></div>
+    <p class="slead">12月的夢月，準備了兩款特別方案。<br>與重要的人共度聖誕晚餐，或與好友舉辦忘年會。</p>
+    <div class="wc">
+      <div class="w xmas" data-until="2026-12-28T00:00:00+09:00"><div class="ph"><span class="tag red">12/22～12/27</span><img src="assets/winter_fillet.jpg" alt="聖誕特別 晚餐套餐" loading="lazy"></div><div class="bd"><div class="org">CHRISTMAS SPECIAL DINNER</div><h3>聖誕特別<br>晚餐套餐</h3><div class="cnt">共 7 道・僅限吧台座位・需預約</div><ol><li>前菜</li><li>炙烤新鮮赤牛肝</li><li>天草大王土雞雞骨湯</li><li>A5特選 熊本阿蘇赤牛 菲力或西冷牛排（120g / 180g）</li><li>俵形飯糰 或 蒜香炒飯</li><li>一口燉牛肉</li><li>甜點：聖誕蛋糕</li></ol><p class="nt">※第1場 18:00～19:30／第2場 19:00～20:30／第3場 20:00～21:30。價格為每位。</p><div class="add"><b>聖誕特典</b>每位來店顧客贈送聖誕禮物／甜點為聖誕蛋糕</div><div class="prow"><div class="pr"><small>菲力 120g</small>16,500<span>日圓（含稅）</span></div><a onclick="gtag('event','reserve_click');" target="_blank" rel="noopener" href="https://www.tablecheck.com/zh-TW/mutsuki-miyakojima/reserve/menu?menu_items=6b068381dfce9f2d30694644" class="rbtn">預約此套餐</a></div><div class="prow"><div class="pr"><small>菲力 180g</small>22,000<span>日圓（含稅）</span></div><a onclick="gtag('event','reserve_click');" target="_blank" rel="noopener" href="https://www.tablecheck.com/zh-TW/mutsuki-miyakojima/reserve/menu?menu_items=6b0694ec0671fc661b362b2e" class="rbtn">預約此套餐</a></div><div class="prow"><div class="pr"><small>西冷 120g</small>16,500<span>日圓（含稅）</span></div><a onclick="gtag('event','reserve_click');" target="_blank" rel="noopener" href="https://www.tablecheck.com/zh-TW/mutsuki-miyakojima/reserve/menu?menu_items=6b0694fc29ebdc5b71f73154" class="rbtn">預約此套餐</a></div><div class="prow"><div class="pr"><small>西冷 180g</small>22,000<span>日圓（含稅）</span></div><a onclick="gtag('event','reserve_click');" target="_blank" rel="noopener" href="https://www.tablecheck.com/zh-TW/mutsuki-miyakojima/reserve/menu?menu_items=6b0695021793e82743f8b57e" class="rbtn">預約此套餐</a></div></div></div>
+      <div class="w" data-until="2026-12-29T00:00:00+09:00"><div class="ph"><span class="tag">12/1～12/28</span><img src="assets/winter_shabu.jpg" alt="忘年會方案 包廂包場・90分鐘" loading="lazy"></div><div class="bd"><div class="org">YEAR-END PARTY PLAN</div><h3>忘年會方案<br>包廂包場・90分鐘</h3><div class="cnt">4～14位・需預約</div><ol><li>A套餐：鹿兒島產黑豬涮涮鍋（前菜／燉牛肉／黑豬里肌涮涮鍋／宮古蕎麥麵／甜點）</li><li>B套餐：特選黑毛和牛A5壽喜燒（前菜／燉牛肉／A5壽喜燒／讚岐烏龍麵／甜點）</li></ol><p class="nt">※第1場 18:00～19:30／第2場 19:00～20:30／第3場 20:00～21:30。價格為每位。</p><div class="add"><b>暢飲（90分鐘）</b>每位 +3,300日圓（含稅）</div><div class="prow"><div class="pr"><small>A套餐</small>6,600<span>日圓（含稅）</span></div><a onclick="gtag('event','reserve_click');" target="_blank" rel="noopener" href="https://www.tablecheck.com/zh-TW/mutsuki-miyakojima/reserve/menu?menu_items=6b06953c7e02a51f0f39b5fd" class="rbtn">預約此套餐</a></div><div class="prow"><div class="pr"><small>A套餐＋暢飲</small>9,900<span>日圓（含稅）</span></div><a onclick="gtag('event','reserve_click');" target="_blank" rel="noopener" href="https://www.tablecheck.com/zh-TW/mutsuki-miyakojima/reserve/menu?menu_items=6b06954259cbd79b4a29c660" class="rbtn">預約此套餐</a></div><div class="prow"><div class="pr"><small>B套餐</small>7,700<span>日圓（含稅）</span></div><a onclick="gtag('event','reserve_click');" target="_blank" rel="noopener" href="https://www.tablecheck.com/zh-TW/mutsuki-miyakojima/reserve/menu?menu_items=6b0695497e02a51f0f39b617" class="rbtn">預約此套餐</a></div><div class="prow"><div class="pr"><small>B套餐＋暢飲</small>11,000<span>日圓（含稅）</span></div><a onclick="gtag('event','reserve_click');" target="_blank" rel="noopener" href="https://www.tablecheck.com/zh-TW/mutsuki-miyakojima/reserve/menu?menu_items=6b06954f37ac767a982d7e44" class="rbtn">預約此套餐</a></div></div></div>
+    </div>
+    <p class="wnote">標示價格皆為含稅價。內容可能因進貨狀況而變更。亦可來電預約：090-8292-2774。</p>
+  </div>
+</section>
 
 <section id="course">
   <div class="wrap rev">
@@ -712,6 +733,9 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll('.rev').forEach(e=>io.observe(e));
 setTimeout(()=>document.querySelectorAll('.rev:not(.in)').forEach(e=>e.classList.add('in')),3000);
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="tablecheck.com"]');if(a&&typeof gtag==='function'){gtag('event','conversion',{'send_to':'AW-18316049919/zyA8CMm5ibMdEP_74p1E'});}});
+</script>
+<script>
+(function(){var t=new Date();document.querySelectorAll('[data-until]').forEach(function(el){if(t>new Date(el.getAttribute('data-until')))el.style.display='none';});var s=document.getElementById('special');if(s&&!s.querySelector('.w:not([style*="none"])'))s.style.display='none';})();
 </script>
 </body>
 </html>
